@@ -94,14 +94,13 @@
 			return $array;
 		}
 
-		public function addSlide($nameImg200,$nameImg80,$nameImg,$tituSlide,$descSlide){
-			$sql =  "INSERT INTO  pghome_slide SET images = :images, images200 = :images200, images80 = :images80, title = :title, descricion = :descricion ";
+		public function addSlide($nameImg200,$nameImg80,$nameImg){
+			$sql =  "INSERT INTO  pghome_slide SET images = :images, images200 = :images200, images80 = :images80 ";
 			$sql = $this->db->prepare($sql);
 			$sql->bindValue(':images200',$nameImg200);
 			$sql->bindValue(':images80',$nameImg80);
 			$sql->bindValue(':images',$nameImg);
-			$sql->bindValue(':title',$tituSlide);
-			$sql->bindValue(':descricion',$descSlide);
+			
 			$sql->execute();
 		}
 
@@ -196,11 +195,14 @@
     }
     
 
-    public function edittextorcamento($textorcamentohome){
+    public function edittextConquistas($textoConquistas, $funFactsClients, $funFactsServices, $funFactsMarketYears){
 
-      $sql = "UPDATE  pghome SET textorcamento = :textorcamento WHERE id = :id  ";
+      $sql = "UPDATE  pghome SET textoconquistas = :textoconquistas, ffclients = :ffclients, ffservices = :ffservices, ffmarket = :ffmarket WHERE id = :id  ";
 			$sql = $this->db->prepare($sql);
-			$sql->bindValue(':textorcamento',$textorcamentohome);
+			$sql->bindValue(':textoconquistas',$textoConquistas);
+			$sql->bindValue(':ffclients',$funFactsClients);
+			$sql->bindValue(':ffservices',$funFactsServices);
+			$sql->bindValue(':ffmarket',$funFactsMarketYears);
 			$sql->bindValue(':id', 1);
 			$sql->execute();
 
@@ -229,4 +231,3 @@
 
 
 	}
-?>

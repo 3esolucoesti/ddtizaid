@@ -14,7 +14,7 @@
 	define ("LINKWEBMAIL", "");
 	
 	if(ENVIRONMENT == 'development'){
-		define ("BASE_URL", "http://127.0.0.1:8080/ddtizaid");
+		define ("BASE_URL", "http://localhost/php_projects/ddtizaid");
 		
 		$config['dbname'] = 'ddtizaid';
 		$config['host'] = 'localhost';

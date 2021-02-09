@@ -1,7 +1,4 @@
 <?php
-	/**
-	 * 
-	 */
 	class Pgabout extends model{
 
 		public function editImgTopo($nameImg200,$nameImg1920x450){
@@ -27,7 +24,6 @@
 				if(!empty($array2)){
 					unlink('../painel/assets/images/'.$array2);
 				}
-
 			}
 
 			$sql = "UPDATE  pg_about SET imagemtopo = :imagemtopo, imgfundo200 = :imgfundo200  ";
@@ -36,7 +32,6 @@
 			$sql->bindValue(':imgfundo200',$nameImg200);
 			$sql->execute();
 		}
-
 
     public function getinfohome(){
 			$array = array();
@@ -65,14 +60,12 @@
     }
 
     public function updatePhoto($nameImg800x500){
-
 			$array = array();
 
 			$sql =  "SELECT * FROM pg_about WHERE id = :id ";
 			$sql = $this->db->prepare($sql);
 			$sql->bindValue(':id',1);
 			$sql->execute();
-
 
 			if($sql->rowCount() > 0){
 				$sql = $sql->fetch();
@@ -81,19 +74,12 @@
 				if(!empty($array)){
 					unlink('../painel/assets/images/'.$array);
 				}
-
 			}
 
-        $sql = "UPDATE pg_about SET images = :images WHERE id = :id ";
-        $sql = $this->db->prepare($sql);
-        $sql->bindValue(':images',$nameImg800x500);
-        $sql->bindValue(':id',1);
-        $sql->execute();
-
+			$sql = "UPDATE pg_about SET images = :images WHERE id = :id ";
+			$sql = $this->db->prepare($sql);
+			$sql->bindValue(':images',$nameImg800x500);
+			$sql->bindValue(':id',1);
+			$sql->execute();
     }
-    
-
-
-
 	}
-?>
