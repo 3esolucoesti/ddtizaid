@@ -45,19 +45,18 @@
 				$pg_home = new Pghome();
         $pg_about = new Pgabout();	
         
-        if(isset($_POST['textsobrenos']) && !empty($_POST['textsobrenos'])){
-					$textsobrenos = $_POST['textsobrenos'];
-					$texmissaoedit = $_POST['texmissaoedit'];
-					$textvisaoedit = $_POST['textvisaoedit'];
-          $textvaloresedit = $_POST['textvaloresedit'];
+        if(isset($_POST['about_title']) && !empty($_POST['about_title'])){
+					$about_title = $_POST['about_title'];
+					$about_description = $_POST['about_description'];
+					$about_mission = $_POST['about_mission'];
+					$about_vision = $_POST['about_vision'];
+          $about_values = $_POST['about_values'];
           
-          if(isset($_FILES['photoAbout']) && !empty($_FILES['photoAbout']['tmp_name'])){
+          if(isset($_FILES['about_photo']) && !empty($_FILES['about_photo']['tmp_name'])){
 
-            $image = $_FILES['photoAbout'];
-  
+            $image = $_FILES['about_photo'];
   
             $filename1 = $image['tmp_name'];
-  
   
             $largura0 = 602;// Maxíma
             $altura0 = 468;// Maxíma
@@ -94,11 +93,8 @@
   
   
             $pg_about->updatePhoto($nameImg800x500);
-  
-  
           }	
-
-          $pg_about->update($textsobrenos,$texmissaoedit,$textvisaoedit,$textvaloresedit);
+          $pg_about->update($about_title, $about_description, $about_mission, $about_vision, $about_values);
 						
 					header("Location: ".BASE_URL."/painel/pgabout");
 				}

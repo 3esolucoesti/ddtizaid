@@ -48,13 +48,14 @@
 			return $array;
     }
     
-    public function update($textsobrenos,$texmissaoedit,$textvisaoedit,$textvaloresedit){
-      $sql = "UPDATE pg_about SET sobre_desc = :sobre_desc, sobre_missao = :sobre_missao, sobre_visao = :sobre_visao, sobre_valores = :sobre_valores WHERE id = :id  ";
+    public function update($about_title, $about_description, $about_mission, $about_vision, $about_values){
+      $sql = "UPDATE pg_about SET sobre_titulo = :sobre_titulo, sobre_desc = :sobre_desc, sobre_missao = :sobre_missao, sobre_visao = :sobre_visao, sobre_valores = :sobre_valores WHERE id = :id  ";
 			$sql = $this->db->prepare($sql);
-			$sql->bindValue(':sobre_desc',$textsobrenos);
-			$sql->bindValue(':sobre_missao',$texmissaoedit);
-			$sql->bindValue(':sobre_visao',$textvisaoedit);
-			$sql->bindValue(':sobre_valores',$textvaloresedit);
+			$sql->bindValue(':sobre_titulo',$about_title);
+			$sql->bindValue(':sobre_desc',$about_description);
+			$sql->bindValue(':sobre_missao',$about_mission);
+			$sql->bindValue(':sobre_visao',$about_vision);
+			$sql->bindValue(':sobre_valores',$about_values);
 			$sql->bindValue(':id',1);
 			$sql->execute();
     }
@@ -62,8 +63,8 @@
     public function updatePhoto($nameImg800x500){
 			$array = array();
 
-			$sql =  "SELECT * FROM pg_about WHERE id = :id ";
-			$sql = $this->db->prepare($sql);
+			$sql= "SELECT * FROM pg_about WHERE id = :id ";
+			$sql= $this->db->prepare($sql);
 			$sql->bindValue(':id',1);
 			$sql->execute();
 

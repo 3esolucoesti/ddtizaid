@@ -154,38 +154,43 @@
 <!-- Sobre -->
 <section class="about-us section" style="background:#ff6f12;">
   <div class="container" style="background:#fff;padding:50px;">
+    <!-- Titulo -->
     <div class="row">
       <div class="col-12">
-        <div class="section-title wow fadeInUp">
-          <!-- <span class="title-bg">DDTIZA-ID</span> -->
-          <h1>Sobre Nós</h1>
+        <div class="section-title">
+          <h1>Sobre nós</h1>
         </div>
       </div>
     </div>
+
+    <!-- Seção Principal -->
     <div class="row">
-      <div class="col-lg-6 col-12 wow fadeInLeft" data-wow-delay="0.6s">
-        <!-- Video -->
+      <!-- Imagem "Sobre Nós" -->
+      <div class="col-lg-6 col-12">
         <div class="about-video">
           <div class="single-video overlay">
-            <img src="<?php echo BASE_URL; ?>/assets/images/about.jpg" alt="#">
+            <img src="<?= BASE_URL; ?>/painel/assets/images/<?= $info_about['images'] ?>" alt="#">
           </div>
         </div>
-        <!--/ End Video -->
       </div>
-      <div class="col-lg-6 col-12 wow fadeInRight" data-wow-delay="0.8s">
-        <!-- About Content -->
+
+      <!-- Texto "Sobre Nós" -->
+      <div class="col-lg-6 col-12">
         <div class="about-content">
-          <h2>Somos uma empresa profissional em Desentupir!</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. You think water moves fast? You should see ice.</p>
-          <p>You think water moves fast? You should see ice. It moves like it has a mind. Like it knows it killed the world once and got a taste for murder. After the avalanche, it took us a weeked do incididunt magna Lorem</p>
-          <div class="button">
-            <a href="<?php echo BASE_URL; ?>/about" class="btn" style="background:#ff6f12;color:white;border:1px solid #ff6f12;">Saiba Mais</a>
-          </div>
+          <h2><?= $info_about['sobre_titulo'] ?></h2>
+          <p><?= $info_about['sobre_desc'] ?></p>
         </div>
-        <!--/ End About Content -->
       </div>
     </div>
+    
   </div>
+  <!-- Seção de Edição -->
+  <div class="barraEditarHome container">
+    <a href="<?php echo BASE_URL; ?>/painel/pgabout" class="btnEditGeral">
+      Ir a pagina "Sobre" para editar
+      <i class="fa fa-cogs"></i>
+    </a>
+  <div>
 </section>
 
 <!-- Serviços -->
@@ -354,7 +359,7 @@
         <div class="modal-dialog modal-lg">
 
           <!-- Modal content-->
-          <div class="modal-content">
+          <div class="modal-content text-left">
 
             <div class="modal-header">
               <button type="button" class="d-none close" data-dismiss="modal">&times;</button>
@@ -365,15 +370,14 @@
 
             <div class="modal-body">
               <form method="POST" enctype="multipart/form-data">
-
                 <ul class="nav nav-tabs">
                   <li class="active">
-                    <button class="btn primary" data-toggle="tab" href="#mainText">
+                    <button class="btn btn-info" data-toggle="tab" href="#mainText">
                       Texto Principal
                     </button>
                   </li>
                   <li>
-                    <button class="btn" data-toggle="tab" href="#funFacts">
+                    <button class="btn btn-info btn-lg" data-toggle="tab" href="#funFacts">
                       Fatos Interessantes
                     </button>
                   </li>
@@ -410,8 +414,10 @@
 
                 </div>
 
-
-                <button type="submit" class="btn primary mt-4">Editar</button>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">CANCELAR</button>
+                  <button type="submit" class="btn btn-primary">ATUALIZAR</button>
+                </div>
 
               </form>
             </div>
@@ -420,7 +426,7 @@
       </div>
 
     </div>
-  <div>
+    <div>
 </section>
 
 <!-- Galeria -->
@@ -540,13 +546,13 @@
         </div>
       </div>
     </div>
-    
+
     <!-- Slider Depoimentos -->
     <div class="row">
       <div class="col-12">
         <div class="row blog-slider">
           <!-- Card de Depoimento -->
-          <?php foreach ($list_depo as $depo): ?>
+          <?php foreach ($list_depo as $depo) : ?>
             <div class="col-lg-4 col-12">
               <div class="single-blog">
                 <div class="blog-head">
@@ -554,13 +560,13 @@
                 </div>
                 <div class="blog-bottom">
                   <div class="blog-inner">
-                    <h4><a href="javascript:void(0);"><?= $depo['name'];?></a></h4>
-                    <p><?= $depo['depoiment'];?></p>
+                    <h4><a href="javascript:void(0);"><?= $depo['name']; ?></a></h4>
+                    <p><?= $depo['depoiment']; ?></p>
                   </div>
                 </div>
               </div>
             </div>
-          <?php endforeach;?>
+          <?php endforeach; ?>
         </div>
       </div>
     </div>
