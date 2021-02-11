@@ -146,7 +146,7 @@
 			var id = $(this).attr('data-id');
 
 			$.ajax({
-				url: '<?php echo BASE_URL; ?>/painel/ajax/conteudoPgDepoimento',
+				url: '<?= BASE_URL; ?>/painel/ajax/conteudoPgDepoimento',
 				type: 'POST',
 				dataType: 'json',
 				data: {
@@ -154,7 +154,7 @@
 				},
 				success: function(json) {
 
-					$('.imgDepoEditar').html('<img src="<?php echo BASE_URL; ?>/painel/assets/images/' + json.images200 + '" height="200" alt="" border="0" />');
+					$('.imgDepoEditar').html('<img src="<?= BASE_URL; ?>/painel/assets/images/' + json.images200 + '" height="200" alt="" border="0" />');
 					$('.nameDepoEditar').val(json.name);
 					$('.DepoEditar').val(json.depoiment);
 					$('.idDepoEditar').val(id);
@@ -180,7 +180,7 @@
 		$('.simDelEscolher').on('click', function() {
 			var id = $('.idDepoEditar').val();
 
-			window.location.href = "<?php echo BASE_URL; ?>/painel/pgdepoiments/delDepoi/" + id;
+			window.location.href = "<?= BASE_URL; ?>/painel/pgdepoiments/delDepoi/" + id;
 
 		});
 
@@ -215,7 +215,7 @@
 						</center>
 					</div>
 					<div class="modal-footer">
-						<a href="<?php echo BASE_URL; ?>/painel" type="button" class="btn btn-default">SAIR</a>
+						<a href="<?= BASE_URL; ?>/painel" type="button" class="btn btn-default">SAIR</a>
 					</div>
 				</div>
 			</div>

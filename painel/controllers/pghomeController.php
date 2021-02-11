@@ -43,7 +43,7 @@
 				$pgcontact = new Pgcontact();
 				$pg_depoiments = new Pgdepoiments();
 				$pg_about = new Pgabout();
-				// $pg_servicos = new Pgservices();	
+				$pg_servicos = new Pgservices();	
 				// $pg_products = new Pgproducts();	
 
 
@@ -64,7 +64,7 @@
 				$data['primeiro_slide'] = $pg_home->getPriSlide();
 				$data['list_depo'] = $pg_depoiments->getDepoiments();
 				$data['info_about'] = $pg_about->getinfohome();
-				// $data['info_services'] = $pg_servicos->getinfoLimit(4);
+				$data['info_services'] = $pg_servicos->getServices();
 				// $data['info_products'] = $pg_products->getinfoRand(8);
 
 

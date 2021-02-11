@@ -182,7 +182,7 @@
         </div>
       </div>
     </div>
-    
+
   </div>
   <!-- Seção de Edição -->
   <div class="barraEditarHome container">
@@ -190,7 +190,7 @@
       Ir a pagina "Sobre" para editar
       <i class="fa fa-cogs"></i>
     </a>
-  <div>
+    <div>
 </section>
 
 <!-- Serviços -->
@@ -208,87 +208,25 @@
       <div class="col-12">
         <div class="service-slider">
           <!-- Single Service -->
-          <div class="single-service">
-            <i class="fa fa-lightbulb-o"></i>
-            <h2><a href="<?php echo BASE_URL; ?>/services">Serviço 1</a></h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, perferendis libero debitis quis quaerat maiores non alias reprehenderit autem odit! Excepturi, fugiat? Debitis quidem nisi iusto numquam rem fugiat harum.</p>
-          </div>
-          <!-- End Single Service -->
-          <!-- Single Service -->
-          <div class="single-service">
-            <i class="fa fa-lightbulb-o"></i>
-            <h2><a href="<?php echo BASE_URL; ?>/services">Serviço 2</a></h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, perferendis libero debitis quis quaerat maiores non alias reprehenderit autem odit! Excepturi, fugiat? Debitis quidem nisi iusto numquam rem fugiat harum.</p>
-          </div>
-          <!-- End Single Service -->
-          <!-- Single Service -->
-          <div class="single-service">
-            <i class="fa fa-lightbulb-o"></i>
-            <h2><a href="<?php echo BASE_URL; ?>/services">Serviço 3</a></h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, perferendis libero debitis quis quaerat maiores non alias reprehenderit autem odit! Excepturi, fugiat? Debitis quidem nisi iusto numquam rem fugiat harum.</p>
-
-          </div>
-          <!-- End Single Service -->
-          <!-- Single Service -->
-          <div class="single-service">
-            <i class="fa fa-lightbulb-o"></i>
-            <h2><a href="<?php echo BASE_URL; ?>/services">Serviço 4</a></h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, perferendis libero debitis quis quaerat maiores non alias reprehenderit autem odit! Excepturi, fugiat? Debitis quidem nisi iusto numquam rem fugiat harum.</p>
-
-          </div>
-          <!-- End Single Service -->
-          <!-- Single Service -->
-          <div class="single-service">
-            <i class="fa fa-lightbulb-o"></i>
-            <h2><a href="<?php echo BASE_URL; ?>/services">Serviço 5</a></h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, perferendis libero debitis quis quaerat maiores non alias reprehenderit autem odit! Excepturi, fugiat? Debitis quidem nisi iusto numquam rem fugiat harum.</p>
-
-          </div>
-          <!-- End Single Service -->
-          <!-- Single Service -->
-          <div class="single-service">
-            <i class="fa fa-lightbulb-o"></i>
-            <h2><a href="<?php echo BASE_URL; ?>/services">Serviço 6</a></h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, perferendis libero debitis quis quaerat maiores non alias reprehenderit autem odit! Excepturi, fugiat? Debitis quidem nisi iusto numquam rem fugiat harum.</p>
-
-          </div>
-          <!-- End Single Service -->
-          <!-- Single Service -->
-          <div class="single-service">
-            <i class="fa fa-lightbulb-o"></i>
-            <h2><a href="<?php echo BASE_URL; ?>/services">Serviço 7</a></h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, perferendis libero debitis quis quaerat maiores non alias reprehenderit autem odit! Excepturi, fugiat? Debitis quidem nisi iusto numquam rem fugiat harum.</p>
-
-          </div>
-          <!-- End Single Service -->
-          <!-- Single Service -->
-          <div class="single-service">
-            <i class="fa fa-lightbulb-o"></i>
-            <h2><a href="<?php echo BASE_URL; ?>/services">Serviço 8</a></h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, perferendis libero debitis quis quaerat maiores non alias reprehenderit autem odit! Excepturi, fugiat? Debitis quidem nisi iusto numquam rem fugiat harum.</p>
-
-          </div>
-          <!-- End Single Service -->
-          <!-- Single Service -->
-          <div class="single-service">
-            <i class="fa fa-lightbulb-o"></i>
-            <h2><a href="<?php echo BASE_URL; ?>/services">Serviço 9</a></h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, perferendis libero debitis quis quaerat maiores non alias reprehenderit autem odit! Excepturi, fugiat? Debitis quidem nisi iusto numquam rem fugiat harum.</p>
-
-          </div>
-          <!-- End Single Service -->
-          <!-- Single Service -->
-          <div class="single-service">
-            <i class="fa fa-lightbulb-o"></i>
-            <h2><a href="<?php echo BASE_URL; ?>/services">Serviço 10</a></h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, perferendis libero debitis quis quaerat maiores non alias reprehenderit autem odit! Excepturi, fugiat? Debitis quidem nisi iusto numquam rem fugiat harum.</p>
-
-          </div>
+          <?php foreach ($info_services as $service) : ?>
+            <div class="single-service">
+              <i class="fa fa-lightbulb-o"></i>
+              <h2><a href="<?= BASE_URL; ?>/painel/pgservices"><?= $service['title'] ?></a></h2>
+              <p><?= $service['description'] ?></p>
+            </div>
+          <?php endforeach; ?>
           <!-- End Single Service -->
         </div>
       </div>
     </div>
   </div>
+  <!-- Seção de Edição -->
+  <div class="barraEditarHome container">
+    <a href="<?= BASE_URL; ?>/painel/pgservices" class="btnEditGeral">
+      Ir a pagina "Serviços" para editar
+      <i class="fa fa-cogs"></i>
+    </a>
+    <div>
 </section>
 
 <!-- Conquistas -->
@@ -518,6 +456,12 @@
       </div>
     </div>
   </div>
+  <div class="barraEditarHome container">
+    <a href="<?php echo BASE_URL; ?>/painel/pgphotos" class="btnEditGeral">
+      Ir a pagina "Galeria de Fotos" para editar
+      <i class="fa fa-cogs"></i>
+    </a>
+  </div>
 </section>
 
 <!-- Missão -->
@@ -527,13 +471,23 @@
       <div class="col-lg-6 col-12 wow fadeInUp">
         <div class="call-to-main">
           <h2>Nossa Missão <br> <span style="font-size:12px;"> DDTIZA-ID </span> </h2> <br>
-          <p>Maecenas sapien erat, porta non porttitor non, dignissim et enim. Aenean ac enim feugiat, facilisis arcu vehicula, consequat sem. Cras et vulputate nisi, ac dignissim mi. Etiam laoreet</p>
-          <a href="<?php echo BASE_URL; ?>/contact" class="btn">ORÇAMENTO</a>
+          <p><?= $info_about['sobre_missao']; ?></p>
+          <a href="<?= BASE_URL; ?>/contact" class="btn">ORÇAMENTO</a>
+          <!-- Seção de Edição -->
         </div>
       </div>
     </div>
   </div>
 </section>
+<!-- Editar Missão -->
+<div class="barraEditarHome">
+  <a href="<?php echo BASE_URL; ?>/painel/pgabout" class="btnEditGeral">
+    Ir a pagina "Sobre" para editar
+    <i class="fa fa-cogs"></i>
+  </a>
+</div>
+
+
 
 <!-- Area de Depoimentos -->
 <section class="blogs-main section" style="background:#ff6f12;">

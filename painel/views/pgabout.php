@@ -200,7 +200,8 @@
       </div>
     </div>
 
-    <div>
+  </div>
+  
 </section>
 
 <?php include_once('views/footer.php'); ?>

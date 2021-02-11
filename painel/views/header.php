@@ -8,19 +8,19 @@
 		<meta name="robots" content="index, follow">
 		<meta name="author" content="Ricardo Alves-Programador">
     <meta name="author" content="Diego Reis-Desing">
-		<title>PAINEL - <?php echo NOME_SITE; ?></title> 
-    <link rel="icon" href="<?php echo BASE_URL; ?>/assets/images/TEMPLATE/icon.jpg"><!-- Por icon Do site REVENDA SITE  navbar_fixed -->
+		<title>PAINEL - <?= NOME_SITE; ?></title> 
+    <link rel="icon" href="<?= BASE_URL; ?>/assets/images/TEMPLATE/icon.jpg"><!-- Por icon Do site REVENDA SITE  navbar_fixed -->
 
-    <link rel="stylesheet" type="text/css" href="<?php echo BASE_URL; ?>/assets/css/font-awesome.min.css">
-
+		
+    <link rel="stylesheet" href="<?= BASE_URL; ?>/assets/css/font-awesome.min.css">
 		<!-- Bootstrap CSS -->
-		<link rel="stylesheet" href="<?php echo BASE_URL; ?>/assets/css/bootstrap.css" />
-		<link rel="stylesheet" href="<?php echo BASE_URL; ?>/assets/css/flaticon.css" />
-		<link rel="stylesheet" href="<?php echo BASE_URL; ?>/assets/css/themify-icons.css" />
-		<link rel="stylesheet" href="<?php echo BASE_URL; ?>/assets/vendors/owl-carousel/owl.carousel.min.css" />
-		<link rel="stylesheet" href="<?php echo BASE_URL; ?>/assets/vendors/nice-select/css/nice-select.css" />
+		<link rel="stylesheet" href="<?= BASE_URL; ?>/assets/css/bootstrap.css" />
+		<link rel="stylesheet" href="<?= BASE_URL; ?>/assets/css/flaticon.css" />
+		<link rel="stylesheet" href="<?= BASE_URL; ?>/assets/css/themify-icons.css" />
+		<link rel="stylesheet" href="<?= BASE_URL; ?>/assets/vendors/owl-carousel/owl.carousel.min.css" />
+		<link rel="stylesheet" href="<?= BASE_URL; ?>/assets/vendors/nice-select/css/nice-select.css" />
     <!-- main css -->
-		<!-- <link rel="stylesheet" href="<?php echo BASE_URL; ?>/assets/css/style.css" /> -->
+		<!-- <link rel="stylesheet" href="<?= BASE_URL; ?>/assets/css/style.css" /> -->
 
      <!-- colocar conteudo css outros -->
 		<style type="text/css">
@@ -29,34 +29,34 @@
 		<!-- Google Font -->
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,800" rel="stylesheet">
 		<!-- Bootstrap Css -->
-		<link rel="stylesheet" href="<?php echo BASE_URL; ?>/assets/css/bootstrap.min.css">
+		<link rel="stylesheet" href="<?= BASE_URL; ?>/assets/css/bootstrap.min.css">
 		<!-- Font Awesome CSS -->
-		<link rel="stylesheet" href="<?php echo BASE_URL; ?>/assets/css/font-awesome.min.css">
+		<link rel="stylesheet" href="<?= BASE_URL; ?>/assets/css/font-awesome.min.css">
 		<!-- Slick Nav CSS -->
-		<link rel="stylesheet" href="<?php echo BASE_URL; ?>/assets/css/slicknav.min.css">
+		<link rel="stylesheet" href="<?= BASE_URL; ?>/assets/css/slicknav.min.css">
 		<!-- Cube Portfolio CSS -->
-		<link rel="stylesheet" href="<?php echo BASE_URL; ?>/assets/css/cubeportfolio.min.css">
+		<link rel="stylesheet" href="<?= BASE_URL; ?>/assets/css/cubeportfolio.min.css">
 		<!-- Magnific Popup CSS -->
-		<link rel="stylesheet" href="<?php echo BASE_URL; ?>/assets/css/magnific-popup.min.css">
+		<link rel="stylesheet" href="<?= BASE_URL; ?>/assets/css/magnific-popup.min.css">
 		<!-- Fancy Box CSS -->
-		<link rel="stylesheet" href="<?php echo BASE_URL; ?>/assets/css/jquery.fancybox.min.css">
+		<link rel="stylesheet" href="<?= BASE_URL; ?>/assets/css/jquery.fancybox.min.css">
 		<!-- Nice Select CSS -->
-		<link rel="stylesheet" href="<?php echo BASE_URL; ?>/assets/css/niceselect.css">
+		<link rel="stylesheet" href="<?= BASE_URL; ?>/assets/css/niceselect.css">
 		<!-- Owl Carousel CSS -->
-		<link rel="stylesheet" href="<?php echo BASE_URL; ?>/assets/css/owl.theme.default.css">
-		<link rel="stylesheet" href="<?php echo BASE_URL; ?>/assets/css/owl.carousel.min.css">
+		<link rel="stylesheet" href="<?= BASE_URL; ?>/assets/css/owl.theme.default.css">
+		<link rel="stylesheet" href="<?= BASE_URL; ?>/assets/css/owl.carousel.min.css">
 		<!-- Slick Slider CSS -->
-		<link rel="stylesheet" href="<?php echo BASE_URL; ?>/assets/css/slickslider.min.css">
+		<link rel="stylesheet" href="<?= BASE_URL; ?>/assets/css/slickslider.min.css">
 		<!-- Animate CSS -->
-		<link rel="stylesheet" href="<?php echo BASE_URL; ?>/assets/css/animate.min.css">
+		<link rel="stylesheet" href="<?= BASE_URL; ?>/assets/css/animate.min.css">
 		
 		<!-- Radix StyleShet CSS -->
-		<link rel="stylesheet" href="<?php echo BASE_URL; ?>/assets/css/reset.css">	
-		<link rel="stylesheet" href="<?php echo BASE_URL; ?>/assets/css/style.css">
-		<link rel="stylesheet" href="<?php echo BASE_URL; ?>/assets/css/responsive.css">	
+		<link rel="stylesheet" href="<?= BASE_URL; ?>/assets/css/reset.css">	
+		<link rel="stylesheet" href="<?= BASE_URL; ?>/assets/css/style.css">
+		<link rel="stylesheet" href="<?= BASE_URL; ?>/assets/css/responsive.css">	
 
 		<!-- Radix Color CSS -->
-		<link rel="stylesheet" href="<?php echo BASE_URL; ?>/assets/css/color/color9.css">
+		<link rel="stylesheet" href="<?= BASE_URL; ?>/assets/css/color/color9.css">
 		<link rel="stylesheet" href="#" id="colors">	
 				
     <!--====== SCRIPTS JS ======-->
@@ -67,7 +67,7 @@
     </script>
 		
 		<!-- Jquery -->
-		<script src="<?php echo BASE_URL; ?>/assets/js/jquery.min.js"></script>
+		<script src="<?= BASE_URL; ?>/assets/js/jquery.min.js"></script>
 
 		<style>
 
@@ -75,7 +75,7 @@
 				background:#ff6f12;
 			}
 
-			.why-choose .why-video{background-image: url('<?php echo BASE_URL; ?>/assets/images/why-choose.jpg');}
+			.why-choose .why-video{background-image: url('<?= BASE_URL; ?>/assets/images/why-choose.jpg');}
 			.active2{
 				border-bottom:2px solid #fff;
 			}

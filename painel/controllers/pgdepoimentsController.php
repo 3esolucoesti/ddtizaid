@@ -336,20 +336,14 @@
 			}
 		}
 
-
 		public function delDepoi($id){
 			$data = array();
-			$pg_depoiments = new Pgdepoiments();
-
 			$id = addslashes($id);
-
+			
+			$pg_depoiments = new Pgdepoiments();
 			$pg_depoiments->delDep($id);
-
 
 			header("Location: ".BASE_URL."/painel/pgdepoiments/lista_depoiments");
 		}
-
-
 	}
-
 ?>
