@@ -487,8 +487,6 @@
   </a>
 </div>
 
-
-
 <!-- Area de Depoimentos -->
 <section class="blogs-main section" style="background:#ff6f12;">
   <div class="container" style="background:#fff;padding:50px;">

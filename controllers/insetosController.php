@@ -37,9 +37,5 @@
      //verificar se existe id
 
       $this->loadTemplate("insetosid" , $data);
-
     }
-  
   }
-
-?>

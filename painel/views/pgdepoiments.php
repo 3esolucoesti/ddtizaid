@@ -357,10 +357,10 @@
 
 			<div class="divAddInden">
 				<a href="<?= BASE_URL; ?>/painel/pghome" class="btn btn-info ml-3">
-				<i class="fa fa-arrow-left"></i>
+					<i class="fa fa-arrow-left"></i>
 					VOLTAR EDITAR PÁGINA HOME
 				</a>
-				
+
 				<a href="<?= BASE_URL; ?>/painel" class="btn btn-sucess" data-target="#addDepoi" data-toggle="modal">
 					<i class="fa fa-upload"></i>
 					ADICIONAR DEPOIMENTO
@@ -377,7 +377,7 @@
 						<th class="acoesTable text-center">AÇÕES</th>
 					</tr>
 				</thead>
-				
+
 				<tbody>
 					<?php foreach ($list_depo as $depo) : ?>
 						<tr>
@@ -386,12 +386,12 @@
 							<td><?= $depo['depoiment']; ?></td>
 							<td>
 								<div class="text-center">
-									
+
 									<a href="javascript:;" class="btn btn-primary md-3 clickEditDepo" data-id="<?= $depo['id']; ?>">
 										<i class="fa fa-ravelry"></i>
 										EDITAR
 									</a>
-									
+
 									<a href="javascript:;" class="btn btn-danger clickDelDepo" data-id="<?= $depo['id']; ?>">
 										<i class="fa fa-trash-o"></i>
 										EXCLUIR

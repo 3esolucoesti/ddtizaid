@@ -42,6 +42,12 @@
   }
 </style>
 
+<script>
+  $(document).ready(function() {
+    $('.m2').addClass('active2');
+  });
+</script>
+
 <!-- Breadcrumbs -->
 <section class="breadcrumbs">
   <div class="container">
@@ -201,7 +207,7 @@
     </div>
 
   </div>
-  
+
 </section>
 
 <?php include_once('views/footer.php'); ?>
