@@ -193,7 +193,7 @@
 
 	<div class="voltarParaoSite">
 		<div>
-			<i class="fa fa-arrow-left"></i> <a href="<?= BASE_URL; ?>/painel/pghome">IR PARA PAINEL</a>
+			<i class="fa fa-arrow-left"></i> <a href="<?= BASE_URL; ?>/painel">IR PARA PAINEL</a>
 		</div>
 	</div>
 

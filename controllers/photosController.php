@@ -11,6 +11,8 @@
       $data = array();  
 
       $data['photos'] = (new Pgphotos())->getPhotos();
+      $data['info_home'] = (new Pghome())->getPgHome();
+      
       $cache = new Cache();  
       if(file_exists('assets/caches/photos.cache') && $cache->is_valido('assets/caches/photos.cache') == true){
           require 'assets/caches/photos.cache';

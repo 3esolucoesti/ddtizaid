@@ -10,6 +10,7 @@
       $data = array();  
       
       $data['services'] = (new Pgservices)->getServices();
+      $data['info_home'] = (new Pghome())->getPgHome();
 
       $cache = new Cache();
       if(file_exists('assets/caches/services.cache') && $cache->is_valido('assets/caches/services.cache') == true){

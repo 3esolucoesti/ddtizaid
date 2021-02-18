@@ -361,6 +361,7 @@
 <!-- Galeria -->
 <section id="portfolio" class="portfolio section" style="background:#ff6f12;">
   <div class="container" style="background:#fff;padding:50px;padding: 50px;">
+
     <div class="row">
       <div class="col-12 wow fadeInUp">
         <div class="">
@@ -369,6 +370,7 @@
         </div>
       </div>
     </div>
+
     <div class="row">
       <div class="col-12">
         <!-- portfolio Nav -->
@@ -376,9 +378,9 @@
           <ul class="tr-list list-inline" id="portfolio-menu">
           </ul>
         </div>
-        <!--/ End portfolio Nav -->
       </div>
     </div>
+
     <div class="portfolio-inner">
       <div class="row">
         <div class="col-12">
@@ -400,14 +402,15 @@
         </div>
         <div class="col-12">
           <div class="button">
-            <a class="btn primary" href="<?php echo BASE_URL; ?>/photos">VER LISTA COMPLETA</a>
+            <a class="btn primary" href="<?= BASE_URL; ?>/painel/pgphotos">VER LISTA COMPLETA</a>
           </div>
         </div>
       </div>
     </div>
+
   </div>
   <div class="barraEditarHome container">
-    <a href="<?php echo BASE_URL; ?>/painel/pgphotos" class="btnEditGeral">
+    <a href="<?= BASE_URL; ?>/painel/pgphotos" class="btnEditGeral">
       Ir a pagina "Galeria de Fotos" para editar
       <i class="fa fa-cogs"></i>
     </a>

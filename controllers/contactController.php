@@ -7,7 +7,8 @@
     
     public function index(){
       $data = array();  
-
+			
+			$data['info_home'] = (new Pghome())->getPgHome();
       $pg_contact = new Pgcontact();
 
       // $data['info_contact'] = $pg_contact->infoContact();

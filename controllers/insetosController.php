@@ -11,6 +11,7 @@
       $data = array();  
 
       $data['info_insetos'] = (new Pginsetos())->getInsetos();
+      $data['info_home'] = (new Pghome())->getPgHome();
       
       $cache = new Cache();      
       if(file_exists('assets/caches/insetos.cache') && $cache->is_valido('assets/caches/insetos.cache') == true){
@@ -33,6 +34,7 @@
       
 
       $data['info_inseto'] = (new Pginsetos())->getInseto($id);
+      $data['info_home'] = (new Pghome())->getPgHome();
 
       $this->loadTemplate("insetosid" , $data);
     }
