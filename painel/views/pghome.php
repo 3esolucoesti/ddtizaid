@@ -355,7 +355,7 @@
       </div>
 
     </div>
-    <div>
+  </div>
 </section>
 
 <!-- Galeria -->
@@ -388,8 +388,8 @@
               <div class="cbp-item website animation printing">
                 <div class="portfolio-single">
                   <div class="portfolio-head">
-                    <a href="<?= BASE_URL; ?>/painel/assets/images/<?= $photos['image'];?>" class="example-image-link" data-lightbox="example-set">
-                      <img src="<?= BASE_URL; ?>/painel/assets/images/<?= $photos['image'];?>" alt="#" class="example-image" />
+                    <a href="<?= BASE_URL; ?>/painel/assets/images/<?= $photos['image']; ?>" class="example-image-link" data-lightbox="example-set">
+                      <img src="<?= BASE_URL; ?>/painel/assets/images/<?= $photos['image']; ?>" alt="#" class="example-image" />
                     </a>
                   </div>
                 </div>

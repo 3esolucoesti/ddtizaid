@@ -19,7 +19,6 @@
       return $array;
     }
 
-
     public function getSlide(){
 			$array = array();
 
@@ -155,7 +154,6 @@
 
 		}
 
-
 		public function delSlide($id){
 
 			$array = array();
@@ -194,7 +192,6 @@
 			$sql->execute();
     }
     
-
     public function edittextConquistas($textoConquistas, $funFactsClients, $funFactsServices, $funFactsMarketYears){
 
       $sql = "UPDATE  pghome SET textoconquistas = :textoconquistas, ffclients = :ffclients, ffservices = :ffservices, ffmarket = :ffmarket WHERE id = :id  ";
@@ -228,6 +225,4 @@
 			$sql->execute();
 
 		}
-
-
 	}

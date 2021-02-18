@@ -24,8 +24,6 @@
 		</div>
 	</div>
 </section>
-<!--/ End Breadcrumbs -->
-
 
 <script>
 	$(document).ready(function() {
@@ -33,10 +31,10 @@
 	});
 </script>
 
-
 <!-- Services -->
 <section id="services" class="services archives section" style="background:#ff6f12;">
-	<div class="container" style="background:#fff;padding:50px;">
+	<div class="container p-5" style="background:#fff;">
+		<!-- Title -->
 		<div class="row">
 			<div class="col-12">
 				<div class="section-title">
@@ -45,89 +43,18 @@
 				</div>
 			</div>
 		</div>
+
+		<!-- Services Container -->
 		<div class="row">
-			<div class="col-lg-4 col-md-6 col-12">
-				<!-- Single Service -->
-				<div class="single-service">
-					<i class="fa fa-lightbulb-o"></i>
-					<h2><a href="javascript:void(0);">Serviços 01</a></h2>
-					<p>welcome to our consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt a tristique tortor maximus</p>
+			<?php foreach ($services as $service) : ?>
+				<div class="col-lg-4 col-md-6 col-12">
+					<div class="single-service">
+						<i class="fa fa-lightbulb-o"></i>
+						<h2><a href="#"><?= $service['title']; ?></a></h2>
+						<p><?= $service['description']; ?></p>
+					</div>
 				</div>
-				<!-- End Single Service -->
-			</div>
-			<div class="col-lg-4 col-md-6 col-12">
-				<!-- Single Service -->
-				<div class="single-service">
-					<i class="fa fa-lightbulb-o"></i>
-					<h2><a href="javascript:void(0);">Serviços 02</a></h2>
-					<p>welcome to our consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt a tristique tortor maximus</p>
-				</div>
-				<!-- End Single Service -->
-			</div>
-			<div class="col-lg-4 col-md-6 col-12">
-				<!-- Single Service -->
-				<div class="single-service">
-					<i class="fa fa-lightbulb-o"></i>
-					<h2><a href="javascript:void(0);">Serviços 03</a></h2>
-					<p>welcome to our consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt a tristique tortor maximus</p>
-				</div>
-				<!-- End Single Service -->
-			</div>
-			<div class="col-lg-4 col-md-6 col-12">
-				<!-- Single Service -->
-				<div class="single-service">
-					<i class="fa fa-lightbulb-o"></i>
-					<h2><a href="javascript:void(0);">Serviços 04</a></h2>
-					<p>welcome to our consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt a tristique tortor maximus</p>
-				</div>
-				<!-- End Single Service -->
-			</div>
-			<div class="col-lg-4 col-md-6 col-12">
-				<!-- Single Service -->
-				<div class="single-service">
-					<i class="fa fa-lightbulb-o"></i>
-					<h2><a href="javascript:void(0);">Serviços 05</a></h2>
-					<p>welcome to our consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt a tristique tortor maximus</p>
-				</div>
-				<!-- End Single Service -->
-			</div>
-			<div class="col-lg-4 col-md-6 col-12">
-				<!-- Single Service -->
-				<div class="single-service">
-					<i class="fa fa-lightbulb-o"></i>
-					<h2><a href="javascript:void(0);">Serviços 06</a></h2>
-					<p>welcome to our consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt a tristique tortor maximus</p>
-				</div>
-				<!-- End Single Service -->
-			</div>
-			<div class="col-lg-4 col-md-6 col-12">
-				<!-- Single Service -->
-				<div class="single-service">
-					<i class="fa fa-lightbulb-o"></i>
-					<h2><a href="javascript:void(0);">Serviços 07</a></h2>
-					<p>welcome to our consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt a tristique tortor maximus</p>
-				</div>
-				<!-- End Single Service -->
-			</div>
-			<div class="col-lg-4 col-md-6 col-12">
-				<!-- Single Service -->
-				<div class="single-service">
-					<i class="fa fa-lightbulb-o"></i>
-					<h2><a href="javascript:void(0);">Serviços 08</a></h2>
-					<p>welcome to our consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt a tristique tortor maximus</p>
-				</div>
-				<!-- End Single Service -->
-			</div>
-			<div class="col-lg-4 col-md-6 col-12">
-				<!-- Single Service -->
-				<div class="single-service">
-					<i class="fa fa-lightbulb-o"></i>
-					<h2><a href="javascript:void(0);">Serviços 09</a></h2>
-					<p>welcome to our consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt a tristique tortor maximus</p>
-				</div>
-				<!-- End Single Service -->
-			</div>
+			<?php endforeach; ?>
 		</div>
 	</div>
 </section>
-<!--/ End Services -->

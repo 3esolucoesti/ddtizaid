@@ -288,227 +288,220 @@
 				
 	<div class="containerr">
 		<style>
-		.services .single-service{
-			/* min-height: 500px !important; */
-		}
+	.services .single-service {
+		/* min-height: 500px !important; */
+	}
 
-		@media all and (min-width: 480px){
-			.services .single-service{
-				/* min-height: 600px !important; */
-			}
+	@media all and (min-width: 480px) {
+		.services .single-service {
+			/* min-height: 600px !important; */
 		}
-		
+	}
 </style>
 
-	<!-- Breadcrumbs -->
-  <section class="breadcrumbs">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <h2><i class="fa fa-pencil"></i>Inseto</h2>
-          <ul>
-            <li><a href="http://localhost/php_projects/ddtizaid"><i class="fa fa-home"></i>Home</a></li>
-            <li class="active"><a href="http://localhost/php_projects/ddtizaid/services"><i class="fa fa-clone"></i>Inseto</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--/ End Breadcrumbs -->
+<!-- Breadcrumbs -->
+<section class="breadcrumbs">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<h2><i class="fa fa-pencil"></i>Inseto</h2>
+				<ul>
+					<li><a href="http://localhost/php_projects/ddtizaid"><i class="fa fa-home"></i>Home</a></li>
+					<li class="active"><a href="http://localhost/php_projects/ddtizaid/services"><i class="fa fa-clone"></i>Inseto</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+<!--/ End Breadcrumbs -->
 
 
-  <script>
-    $(document).ready(function(){
-      $('.m6').addClass('active2');
-    });
-  </script>
+<script>
+	$(document).ready(function() {
+		$('.m6').addClass('active2');
+	});
+</script>
 
 
-	<!-- Services -->
-  <section id="services" class="services archives section" style="background:#ff6f12;" >
-			<div class="container" style="background:#fff;padding:50px;" >
-				<div class="row">
-					<div class="col-12">
-						<div class="section-title">
-							<span class="title-bg"></span>
-							<h1>Insetos</h1>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-lg-4 col-md-6 col-12">
-						<!-- Single Service -->
-						<div class="single-service">
-            	<img src="http://localhost/php_projects/ddtizaid/assets/images/d1.jpg" alt=""  />
-							<h2><a href="javascript:void(0);">ABELHA</a></h2>
-							<p>welcome to our consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt a tristique tortor maximus</p>
-							<a href="http://localhost/php_projects/ddtizaid/insetos/insetosid/1" class="btn btn-default" style="margin-top: 20px;background:#ff6f12;color:white;" >SAIBA MAIS</a>
-						</div>
-						<!-- End Single Service -->
-					</div>
-					<div class="col-lg-4 col-md-6 col-12">
-						<!-- Single Service -->
-						<div class="single-service">
-						<img src="http://localhost/php_projects/ddtizaid/assets/images/d2.jpg" alt=""  />
-							<h2><a href="javascript:void(0);">ARANHA</a></h2>
-							<p>welcome to our consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt a tristique tortor maximus</p>
-							<a href="http://localhost/php_projects/ddtizaid/insetos/insetosid/1" class="btn btn-default" style="margin-top: 20px;background:#ff6f12;color:white;" >SAIBA MAIS</a>
-						</div>
-						<!-- End Single Service -->
-					</div>
-					<div class="col-lg-4 col-md-6 col-12">
-						<!-- Single Service -->
-						<div class="single-service">
-            <img src="http://localhost/php_projects/ddtizaid/assets/images/d3.jpg" alt=""  />
-							<h2><a href="javascript:void(0);">RATOS</a></h2>
-							<p>welcome to our consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt a tristique tortor maximus</p>
-							<a href="http://localhost/php_projects/ddtizaid/insetos/insetosid/1" class="btn btn-default" style="margin-top: 20px;background:#ff6f12;color:white;" >SAIBA MAIS</a>
-						</div>
-						<!-- End Single Service -->
-					</div>
-					<div class="col-lg-4 col-md-6 col-12">
-						<!-- Single Service -->
-						<div class="single-service">
-            <img src="http://localhost/php_projects/ddtizaid/assets/images/d4.jpg" alt=""  />
-							<h2><a href="javascript:void(0);">BROCAS</a></h2>
-							<p>welcome to our consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt a tristique tortor maximus</p>
-							<a href="http://localhost/php_projects/ddtizaid/insetos/insetosid/1" class="btn btn-default" style="margin-top: 20px;background:#ff6f12;color:white;" >SAIBA MAIS</a>
-						</div>
-						<!-- End Single Service -->
-					</div>
-					<div class="col-lg-4 col-md-6 col-12">
-						<!-- Single Service -->
-						<div class="single-service">
-            <img src="http://localhost/php_projects/ddtizaid/assets/images/d5.jpg" alt=""  />
-							<h2><a href="javascript:void(0);">CARRAPATOS</a></h2>
-							<p>welcome to our consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt a tristique tortor maximus</p>
-							<a href="http://localhost/php_projects/ddtizaid/insetos/insetosid/1" class="btn btn-default" style="margin-top: 20px;background:#ff6f12;color:white;" >SAIBA MAIS</a>
-						</div>
-						<!-- End Single Service -->
-					</div>
-					<div class="col-lg-4 col-md-6 col-12">
-						<!-- Single Service -->
-						<div class="single-service">
-            <img src="http://localhost/php_projects/ddtizaid/assets/images/d6.jpg" alt=""  />
-							<h2><a href="javascript:void(0);">CARUNCHOS</a></h2>
-							<p>welcome to our consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt a tristique tortor maximus</p>
-							<a href="http://localhost/php_projects/ddtizaid/insetos/insetosid/1" class="btn btn-default" style="margin-top: 20px;background:#ff6f12;color:white;" >SAIBA MAIS</a>
-						</div>
-						<!-- End Single Service -->
-					</div>
-					<div class="col-lg-4 col-md-6 col-12">
-						<!-- Single Service -->
-						<div class="single-service">
-            <img src="http://localhost/php_projects/ddtizaid/assets/images/d7.jpg" alt=""  />
-							<h2><a href="javascript:void(0);">CUPINS</a></h2>
-							<p>welcome to our consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt a tristique tortor maximus</p>
-							<a href="http://localhost/php_projects/ddtizaid/insetos/insetosid/1" class="btn btn-default" style="margin-top: 20px;background:#ff6f12;color:white;" >SAIBA MAIS</a>
-						</div>
-						<!-- End Single Service -->
-					</div>
-					<div class="col-lg-4 col-md-6 col-12">
-						<!-- Single Service -->
-						<div class="single-service">
-            <img src="http://localhost/php_projects/ddtizaid/assets/images/d8.jpg" alt=""  />
-							<h2><a href="javascript:void(0);">FORMIGAS</a></h2>
-							<p>welcome to our consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt a tristique tortor maximus</p>
-							<a href="http://localhost/php_projects/ddtizaid/insetos/insetosid/1" class="btn btn-default" style="margin-top: 20px;background:#ff6f12;color:white;" >SAIBA MAIS</a>
-						</div>
-						<!-- End Single Service -->
-					</div>
-					<div class="col-lg-4 col-md-6 col-12">	
-						<!-- Single Service -->
-						<div class="single-service">
-            <img src="http://localhost/php_projects/ddtizaid/assets/images/d9.jpg" alt=""  />
-							<h2><a href="javascript:void(0);">LACRAIA</a></h2>
-							<p>welcome to our consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt a tristique tortor maximus</p>
-							<a href="http://localhost/php_projects/ddtizaid/insetos/insetosid/1" class="btn btn-default" style="margin-top: 20px;background:#ff6f12;color:white;" >SAIBA MAIS</a>
-						</div>
-						<!-- End Single Service -->	
-					</div>
-
-
-					<div class="col-lg-4 col-md-6 col-12">	
-						<!-- Single Service -->
-						<div class="single-service">
-            <img src="http://localhost/php_projects/ddtizaid/assets/images/d10.jpg" alt=""  />
-							<h2><a href="javascript:void(0);">MARIBONDO</a></h2>
-							<p>welcome to our consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt a tristique tortor maximus</p>
-							<a href="http://localhost/php_projects/ddtizaid/insetos/insetosid/1" class="btn btn-default" style="margin-top: 20px;background:#ff6f12;color:white;" >SAIBA MAIS</a>
-						</div>
-						<!-- End Single Service -->	
-					</div>
-
-					<div class="col-lg-4 col-md-6 col-12">	
-						<!-- Single Service -->
-						<div class="single-service">
-            <img src="http://localhost/php_projects/ddtizaid/assets/images/d11.jpg" alt=""  />
-							<h2><a href="javascript:void(0);">MOCEGOS</a></h2>
-							<p>welcome to our consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt a tristique tortor maximus</p>
-							<a href="http://localhost/php_projects/ddtizaid/insetos/insetosid/1" class="btn btn-default" style="margin-top: 20px;background:#ff6f12;color:white;" >SAIBA MAIS</a>
-						</div>
-						<!-- End Single Service -->	
-					</div>
-
-					<div class="col-lg-4 col-md-6 col-12">	
-						<!-- Single Service -->
-						<div class="single-service">
-            <img src="http://localhost/php_projects/ddtizaid/assets/images/d12.jpg" alt=""  />
-							<h2><a href="javascript:void(0);">MOSCAS</a></h2>
-							<p>welcome to our consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt a tristique tortor maximus</p>
-							<a href="http://localhost/php_projects/ddtizaid/insetos/insetosid/1" class="btn btn-default" style="margin-top: 20px;background:#ff6f12;color:white;" >SAIBA MAIS</a>
-						</div>
-						<!-- End Single Service -->	
-					</div>
-
-					<div class="col-lg-4 col-md-6 col-12">	
-						<!-- Single Service -->
-						<div class="single-service">
-            <img src="http://localhost/php_projects/ddtizaid/assets/images/d13.jpg" alt=""  />
-							<h2><a href="javascript:void(0);">MOSQUITOS</a></h2>
-							<p>welcome to our consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt a tristique tortor maximus</p>
-							<a href="http://localhost/php_projects/ddtizaid/insetos/insetosid/1" class="btn btn-default" style="margin-top: 20px;background:#ff6f12;color:white;" >SAIBA MAIS</a>
-						</div>
-						<!-- End Single Service -->	
-					</div>
-
-					<div class="col-lg-4 col-md-6 col-12">	
-						<!-- Single Service -->
-						<div class="single-service">
-            <img src="http://localhost/php_projects/ddtizaid/assets/images/d14.jpg" alt=""  />
-							<h2><a href="javascript:void(0);">PERCEVEJO</a></h2>
-							<p>welcome to our consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt a tristique tortor maximus</p>
-							<a href="http://localhost/php_projects/ddtizaid/insetos/insetosid/1" class="btn btn-default" style="margin-top: 20px;background:#ff6f12;color:white;" >SAIBA MAIS</a>
-						</div>
-						<!-- End Single Service -->	
-					</div>
-
-					<div class="col-lg-4 col-md-6 col-12">	
-						<!-- Single Service -->
-						<div class="single-service">
-            <img src="http://localhost/php_projects/ddtizaid/assets/images/d15.jpg" alt=""  />
-							<h2><a href="javascript:void(0);">POMBOS</a></h2>
-							<p>welcome to our consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt a tristique tortor maximus</p>
-							<a href="http://localhost/php_projects/ddtizaid/insetos/insetosid/1" class="btn btn-default" style="margin-top: 20px;background:#ff6f12;color:white;" >SAIBA MAIS</a>
-						</div>
-						<!-- End Single Service -->	
-					</div>
-
-					<div class="col-lg-4 col-md-6 col-12">	
-						<!-- Single Service -->
-						<div class="single-service">
-            <img src="http://localhost/php_projects/ddtizaid/assets/images/d16.jpg" alt=""  />
-							<h2><a href="javascript:void(0);">PULGAS</a></h2>
-							<p>welcome to our consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt a tristique tortor maximus</p>
-							<a href="http://localhost/php_projects/ddtizaid/insetos/insetosid/1" class="btn btn-default" style="margin-top: 20px;background:#ff6f12;color:white;" >SAIBA MAIS</a>
-						</div>
-						<!-- End Single Service -->	
-					</div>
-
+<!-- Services -->
+<section id="services" class="services archives section" style="background:#ff6f12;">
+	<div class="container p-5" style="background:#fff;">
+		<!-- Title -->
+		<div class="row">
+			<div class="col-12">
+				<div class="section-title">
+					<span class="title-bg"></span>
+					<h1>Insetos</h1>
 				</div>
 			</div>
-		</section>
-		<!--/ End Services -->	</div> 
+		</div>
+
+		<!-- Content -->
+		<div class="row">
+										<!-- Single Service -->
+				<div class="col-lg-4 col-md-6 col-12">
+					<div class="single-service">
+						<img src="http://localhost/php_projects/ddtizaid/painel/assets/images/min_800x5009bfacf4ee9eab43faf7e8fe81eb25f76.jpg" alt="Abelhas" />
+						<h2>Abelhas</h2>
+						<p>welcome to our consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt a tristique tortor maximus</p>
+						<a href="http://localhost/php_projects/ddtizaid/insetos/insetosid/1" class="btn btn-default mt-4" style="background:#ff6f12;color:white;">SAIBA MAIS</a>
+					</div>
+				</div>
+				<!-- End Single Service -->
+							<!-- Single Service -->
+				<div class="col-lg-4 col-md-6 col-12">
+					<div class="single-service">
+						<img src="http://localhost/php_projects/ddtizaid/painel/assets/images/min_800x50061a7080dced29b50757f5bcea1845e16.jpg" alt="Aranhas" />
+						<h2>Aranhas</h2>
+						<p>welcome to our consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt a tristique tortor maximus</p>
+						<a href="http://localhost/php_projects/ddtizaid/insetos/insetosid/2" class="btn btn-default mt-4" style="background:#ff6f12;color:white;">SAIBA MAIS</a>
+					</div>
+				</div>
+				<!-- End Single Service -->
+							<!-- Single Service -->
+				<div class="col-lg-4 col-md-6 col-12">
+					<div class="single-service">
+						<img src="http://localhost/php_projects/ddtizaid/painel/assets/images/min_800x5006ef47a1a98589eeb613d76bc5529a7ba.jpg" alt="Ratos" />
+						<h2>Ratos</h2>
+						<p>welcome to our consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt a tristique tortor maximus</p>
+						<a href="http://localhost/php_projects/ddtizaid/insetos/insetosid/3" class="btn btn-default mt-4" style="background:#ff6f12;color:white;">SAIBA MAIS</a>
+					</div>
+				</div>
+				<!-- End Single Service -->
+							<!-- Single Service -->
+				<div class="col-lg-4 col-md-6 col-12">
+					<div class="single-service">
+						<img src="http://localhost/php_projects/ddtizaid/painel/assets/images/min_800x500e777e038c2e340ad5d4b15ca9704f4ea.jpg" alt="Brocas" />
+						<h2>Brocas</h2>
+						<p>welcome to our consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt a tristique tortor maximus</p>
+						<a href="http://localhost/php_projects/ddtizaid/insetos/insetosid/4" class="btn btn-default mt-4" style="background:#ff6f12;color:white;">SAIBA MAIS</a>
+					</div>
+				</div>
+				<!-- End Single Service -->
+							<!-- Single Service -->
+				<div class="col-lg-4 col-md-6 col-12">
+					<div class="single-service">
+						<img src="http://localhost/php_projects/ddtizaid/painel/assets/images/min_800x50039a2ef74646e12f9a86f2f20c4af9b87.jpg" alt="Carrapatos" />
+						<h2>Carrapatos</h2>
+						<p>welcome to our consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt a tristique tortor maximus</p>
+						<a href="http://localhost/php_projects/ddtizaid/insetos/insetosid/7" class="btn btn-default mt-4" style="background:#ff6f12;color:white;">SAIBA MAIS</a>
+					</div>
+				</div>
+				<!-- End Single Service -->
+							<!-- Single Service -->
+				<div class="col-lg-4 col-md-6 col-12">
+					<div class="single-service">
+						<img src="http://localhost/php_projects/ddtizaid/painel/assets/images/min_800x5001a62743db5c5dd32367c9b20631e036f.jpg" alt="Carunchos" />
+						<h2>Carunchos</h2>
+						<p>welcome to our consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt a tristique tortor maximus</p>
+						<a href="http://localhost/php_projects/ddtizaid/insetos/insetosid/8" class="btn btn-default mt-4" style="background:#ff6f12;color:white;">SAIBA MAIS</a>
+					</div>
+				</div>
+				<!-- End Single Service -->
+							<!-- Single Service -->
+				<div class="col-lg-4 col-md-6 col-12">
+					<div class="single-service">
+						<img src="http://localhost/php_projects/ddtizaid/painel/assets/images/min_800x500d4ddc3cc35e1e4e6bdee2e59ad8cbea3.jpg" alt="Cupins" />
+						<h2>Cupins</h2>
+						<p>welcome to our consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt a tristique tortor maximus</p>
+						<a href="http://localhost/php_projects/ddtizaid/insetos/insetosid/9" class="btn btn-default mt-4" style="background:#ff6f12;color:white;">SAIBA MAIS</a>
+					</div>
+				</div>
+				<!-- End Single Service -->
+							<!-- Single Service -->
+				<div class="col-lg-4 col-md-6 col-12">
+					<div class="single-service">
+						<img src="http://localhost/php_projects/ddtizaid/painel/assets/images/min_800x500f6dfe98bcf3cc1957c49af7ec8566b8c.jpg" alt="Formigas" />
+						<h2>Formigas</h2>
+						<p>welcome to our consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt a tristique tortor maximus</p>
+						<a href="http://localhost/php_projects/ddtizaid/insetos/insetosid/10" class="btn btn-default mt-4" style="background:#ff6f12;color:white;">SAIBA MAIS</a>
+					</div>
+				</div>
+				<!-- End Single Service -->
+							<!-- Single Service -->
+				<div class="col-lg-4 col-md-6 col-12">
+					<div class="single-service">
+						<img src="http://localhost/php_projects/ddtizaid/painel/assets/images/min_800x50093f0b2a413f709487a904f384b69a661.jpg" alt="Lacraias" />
+						<h2>Lacraias</h2>
+						<p>welcome to our consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt a tristique tortor maximus</p>
+						<a href="http://localhost/php_projects/ddtizaid/insetos/insetosid/11" class="btn btn-default mt-4" style="background:#ff6f12;color:white;">SAIBA MAIS</a>
+					</div>
+				</div>
+				<!-- End Single Service -->
+							<!-- Single Service -->
+				<div class="col-lg-4 col-md-6 col-12">
+					<div class="single-service">
+						<img src="http://localhost/php_projects/ddtizaid/painel/assets/images/min_800x5007d1ef9869f9d9765da4c5b10908b93f7.jpg" alt="Maribondos" />
+						<h2>Maribondos</h2>
+						<p>welcome to our consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt a tristique tortor maximus</p>
+						<a href="http://localhost/php_projects/ddtizaid/insetos/insetosid/12" class="btn btn-default mt-4" style="background:#ff6f12;color:white;">SAIBA MAIS</a>
+					</div>
+				</div>
+				<!-- End Single Service -->
+							<!-- Single Service -->
+				<div class="col-lg-4 col-md-6 col-12">
+					<div class="single-service">
+						<img src="http://localhost/php_projects/ddtizaid/painel/assets/images/min_800x500be23bad2c40e2fe076b7d0c9985fb49d.jpg" alt="Morcegos" />
+						<h2>Morcegos</h2>
+						<p>welcome to our consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt a tristique tortor maximus</p>
+						<a href="http://localhost/php_projects/ddtizaid/insetos/insetosid/13" class="btn btn-default mt-4" style="background:#ff6f12;color:white;">SAIBA MAIS</a>
+					</div>
+				</div>
+				<!-- End Single Service -->
+							<!-- Single Service -->
+				<div class="col-lg-4 col-md-6 col-12">
+					<div class="single-service">
+						<img src="http://localhost/php_projects/ddtizaid/painel/assets/images/min_800x500418a27f82e0aeea84918e729662839b1.jpg" alt="Moscas" />
+						<h2>Moscas</h2>
+						<p>welcome to our consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt a tristique tortor maximus</p>
+						<a href="http://localhost/php_projects/ddtizaid/insetos/insetosid/14" class="btn btn-default mt-4" style="background:#ff6f12;color:white;">SAIBA MAIS</a>
+					</div>
+				</div>
+				<!-- End Single Service -->
+							<!-- Single Service -->
+				<div class="col-lg-4 col-md-6 col-12">
+					<div class="single-service">
+						<img src="http://localhost/php_projects/ddtizaid/painel/assets/images/min_800x50057999e8f647aab50cec252ad08eefb2a.jpg" alt="Mosquitos" />
+						<h2>Mosquitos</h2>
+						<p>welcome to our consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt a tristique tortor maximus</p>
+						<a href="http://localhost/php_projects/ddtizaid/insetos/insetosid/15" class="btn btn-default mt-4" style="background:#ff6f12;color:white;">SAIBA MAIS</a>
+					</div>
+				</div>
+				<!-- End Single Service -->
+							<!-- Single Service -->
+				<div class="col-lg-4 col-md-6 col-12">
+					<div class="single-service">
+						<img src="http://localhost/php_projects/ddtizaid/painel/assets/images/min_800x500935e38f11694a8ea2bbb572726783f9e.jpg" alt="Percevejos" />
+						<h2>Percevejos</h2>
+						<p>welcome to our consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt a tristique tortor maximus</p>
+						<a href="http://localhost/php_projects/ddtizaid/insetos/insetosid/16" class="btn btn-default mt-4" style="background:#ff6f12;color:white;">SAIBA MAIS</a>
+					</div>
+				</div>
+				<!-- End Single Service -->
+							<!-- Single Service -->
+				<div class="col-lg-4 col-md-6 col-12">
+					<div class="single-service">
+						<img src="http://localhost/php_projects/ddtizaid/painel/assets/images/min_800x5002f050e1aee3d924af81c71e3b02de9bb.jpg" alt="Pombos" />
+						<h2>Pombos</h2>
+						<p>welcome to our consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt a tristique tortor maximus</p>
+						<a href="http://localhost/php_projects/ddtizaid/insetos/insetosid/17" class="btn btn-default mt-4" style="background:#ff6f12;color:white;">SAIBA MAIS</a>
+					</div>
+				</div>
+				<!-- End Single Service -->
+							<!-- Single Service -->
+				<div class="col-lg-4 col-md-6 col-12">
+					<div class="single-service">
+						<img src="http://localhost/php_projects/ddtizaid/painel/assets/images/min_800x5007e92d2085b68e10941da3cfa4accc5c0.jpg" alt="Pulgas" />
+						<h2>Pulgas</h2>
+						<p>welcome to our consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt a tristique tortor maximus</p>
+						<a href="http://localhost/php_projects/ddtizaid/insetos/insetosid/19" class="btn btn-default mt-4" style="background:#ff6f12;color:white;">SAIBA MAIS</a>
+					</div>
+				</div>
+				<!-- End Single Service -->
+					</div>
+	</div>
+</section>
+<!--/ End Services -->	</div> 
         
 
 	<!-- Footer -->

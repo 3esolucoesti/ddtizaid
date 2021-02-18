@@ -46,58 +46,57 @@
   });
 </script>
 
+
 <!-- About Us -->
 <section class="about-us section" style="background:#ff6f12;">
-  <div class="container" style="background:#fff;padding: 50px;">
+  <div class="container p-5" style="background:#fff;">
+    <!-- Titulo -->
     <div class="row">
       <div class="col-12">
         <div class="section-title">
-          <!-- <span class="title-bg">Radix</span> -->
           <h1>Sobre nós</h1>
         </div>
       </div>
     </div>
+
+    <!-- Seção Principal -->
     <div class="row">
+      <!-- Imagem "Sobre Nós" -->
       <div class="col-lg-6 col-12">
-        <!-- Video -->
         <div class="about-video">
           <div class="single-video overlay">
-            <img src="<?php echo BASE_URL; ?>/assets/images/about.jpg" alt="#">
+            <img src="<?= BASE_URL; ?>/painel/assets/images/<?= $info_about['images'] ?>" alt="#">
           </div>
         </div>
-        <!--/ End Video -->
       </div>
+
+      <!-- Texto "Sobre Nós" -->
       <div class="col-lg-6 col-12">
-        <!-- About Content -->
         <div class="about-content">
-          <h2>Somos uma empresa profissional em Desentupir!</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. You think water moves fast? You should see ice.</p>
-          <p>You think water moves fast? You should see ice. It moves like it has a mind. Like it knows it killed the world once and got a taste for murder. After the avalanche, it took us a weeked do incididunt magna Lorem</p>
+          <h2><?= $info_about['sobre_titulo'] ?></h2>
+          <p><?= $info_about['sobre_desc'] ?></p>
         </div>
-        <!--/ End About Content -->
       </div>
+
     </div>
 
-
-    <br> <br>
-
-    <div class="mvv">
-      <div>
+    <!-- Subseção -->
+    <div class="mvv mt-5">
+      <div class="col-12 p-0">
         <label>Missão</label>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos doloremque rem, eius asperiores accusamus at corrupti aperiam temporibus, laboriosam fugiat quis soluta, delectus in assumenda tempore saepe sed nisi natus!</p>
+        <p><?= $info_about['sobre_missao'] ?></p>
       </div>
-      <div>
+
+      <div class="col-12 p-0">
         <label>Visão</label>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos doloremque rem, eius asperiores accusamus at corrupti aperiam temporibus, laboriosam fugiat quis soluta, delectus in assumenda tempore saepe sed nisi natus!</p>
+        <p><?= $info_about['sobre_visao'] ?></p>
       </div>
-      <div>
+
+      <div class="col-12 p-0">
         <label>Valores</label>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos doloremque rem, eius asperiores accusamus at corrupti aperiam temporibus, laboriosam fugiat quis soluta, delectus in assumenda tempore saepe sed nisi natus!</p>
+        <p><?= $info_about['sobre_valores'] ?></p>
       </div>
     </div>
-
-
-
   </div>
 </section>
 <!--/ End About Us -->
