@@ -39,19 +39,17 @@
 			$data['sector'] = $u->getSector();
 
 			if($u->hasPermission('editar_site')){	
-				// $pg_home = new Pghome();
-				// $pgcontact = new Pgcontact();
+				$pg_home = new Pghome();
+				$pgcontact = new Pgcontact();
 				// $pg_about = new Pgabout();	
 
-				// $data['info_home'] = $pg_home->getPgHome();
+				$data['info_home'] = $pg_home->getPgHome();
         // $data['info_about'] = $pg_about->getinfohome();
 
-				// $this->loadView("pgcontact" , $data);
-
+				$this->loadView("pgcontact" , $data);
 			}else{
 				header("Location: ".BASE_URL."/painel");
 			}
-			
 		}
 
 		public function lista_msg(){

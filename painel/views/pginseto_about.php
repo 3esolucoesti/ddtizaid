@@ -44,7 +44,7 @@
     <!-- Modal content-->
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title">ADCIONAR INSETOS</h5>
+        <h5 class="modal-title">ADCIONAR ARTIGO</h5>
       </div>
 
       <div class="modal-body">

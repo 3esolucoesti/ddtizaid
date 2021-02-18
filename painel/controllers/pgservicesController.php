@@ -43,7 +43,9 @@ class pgservicesController extends controller
 
     if ($u->hasPermission('editar_site')) {
       $pg_services = new Pgservices();
-
+      $pg_home = new Pghome();
+      
+			$data['info_home'] = $pg_home->getPgHome();
       $data['services'] = $pg_services->getServices();
       $this->loadView("pgservices", $data);
     } else {

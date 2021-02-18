@@ -55,15 +55,6 @@
     margin-top: 100px;
   }
 
-  .services .single-service {
-    /* min-height: 400px !important; */
-  }
-
-  @media all and (min-width: 480px) {
-    .services .single-service {
-      /* min-height: 350px !important; */
-    }
-  }
 
   @media all and (min-width: 1024px) {
     .areaslide {
@@ -308,14 +299,14 @@
 
             <div class="modal-body">
               <form method="POST" enctype="multipart/form-data">
-                <ul class="nav nav-tabs">
-                  <li class="active">
-                    <button class="btn btn-info" data-toggle="tab" href="#mainText">
+                <ul class="nav nav-tabs" style="flex-flow: nowrap; gap: 1px;">
+                  <li class="active" style="width: 100%;">
+                    <button class="btn btn-info btn-block" data-toggle="tab" href="#mainText">
                       Texto Principal
                     </button>
                   </li>
-                  <li>
-                    <button class="btn btn-info btn-lg" data-toggle="tab" href="#funFacts">
+                  <li style="width: 100%;">
+                    <button class="btn btn-info btn-block" data-toggle="tab" href="#funFacts">
                       Fatos Interessantes
                     </button>
                   </li>
@@ -353,8 +344,8 @@
                 </div>
 
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-danger" data-dismiss="modal">CANCELAR</button>
                   <button type="submit" class="btn btn-primary">ATUALIZAR</button>
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">CANCELAR</button>
                 </div>
 
               </form>
@@ -393,58 +384,17 @@
         <div class="col-12">
           <div id="portfolio-item">
             <!-- Single portfolio -->
-            <div class="cbp-item website animation printing">
-              <div class="portfolio-single">
-                <div class="portfolio-head">
-                  <a href="<?php echo BASE_URL; ?>/assets/images/foto1.jpg" class="example-image-link" data-lightbox="example-set"> <img src="<?php echo BASE_URL; ?>/assets/images/foto1.jpg" alt="#" class="example-image" /></a>
+            <?php foreach ($list_photos as $photos) : ?>
+              <div class="cbp-item website animation printing">
+                <div class="portfolio-single">
+                  <div class="portfolio-head">
+                    <a href="<?= BASE_URL; ?>/painel/assets/images/<?= $photos['image'];?>" class="example-image-link" data-lightbox="example-set">
+                      <img src="<?= BASE_URL; ?>/painel/assets/images/<?= $photos['image'];?>" alt="#" class="example-image" />
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <!--/ End portfolio -->
-            <!-- Single portfolio -->
-            <div class="cbp-item website package development">
-              <div class="portfolio-single">
-                <div class="portfolio-head">
-                  <a href="<?php echo BASE_URL; ?>/assets/images/foto2.jpg" class="example-image-link" data-lightbox="example-set"> <img src="<?php echo BASE_URL; ?>/assets/images/foto2.jpg" alt="#" class="example-image" /></a>
-                </div>
-              </div>
-            </div>
-            <!--/ End portfolio -->
-            <!-- Single portfolio -->
-            <div class="cbp-item website animation">
-              <div class="portfolio-single">
-                <div class="portfolio-head">
-                  <a href="<?php echo BASE_URL; ?>/assets/images/foto3.jpg" class="example-image-link" data-lightbox="example-set"> <img src="<?php echo BASE_URL; ?>/assets/images/foto3.jpg" alt="#" class="example-image" /></a>
-                </div>
-              </div>
-            </div>
-            <!--/ End portfolio -->
-            <!-- Single portfolio -->
-            <div class="cbp-item development printing">
-              <div class="portfolio-single">
-                <div class="portfolio-head">
-                  <a href="<?php echo BASE_URL; ?>/assets/images/foto4.jpg" class="example-image-link" data-lightbox="example-set"> <img src="<?php echo BASE_URL; ?>/assets/images/foto1.jpg" alt="#" class="example-image" /></a>
-                </div>
-              </div>
-            </div>
-            <!--/ End portfolio -->
-            <!-- Single portfolio -->
-            <div class="cbp-item development package">
-              <div class="portfolio-single">
-                <div class="portfolio-head">
-                  <a href="<?php echo BASE_URL; ?>/assets/images/foto5.jpg" class="example-image-link" data-lightbox="example-set"> <img src="<?php echo BASE_URL; ?>/assets/images/foto2.jpg" alt="#" class="example-image" /></a>
-                </div>
-              </div>
-            </div>
-            <!--/ End portfolio -->
-            <!-- Single portfolio -->
-            <div class="cbp-item website animation printing">
-              <div class="portfolio-single">
-                <div class="portfolio-head">
-                  <a href="<?php echo BASE_URL; ?>/assets/images/foto6.jpg" class="example-image-link" data-lightbox="example-set"> <img src="<?php echo BASE_URL; ?>/assets/images/foto3.jpg" alt="#" class="example-image" /></a>
-                </div>
-              </div>
-            </div>
+            <?php endforeach; ?>
             <!--/ End portfolio -->
           </div>
         </div>

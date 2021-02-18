@@ -88,6 +88,8 @@ class pginsetosController extends controller
 
     if ($u->hasPermission('editar_site')) {
       $pg_insetos = new Pginsetos();
+      $pg_home = new Pghome();
+			$data['info_home'] = $pg_home->getPgHome();
 
       if (isset($_GET['id'])) {
         $id = $_GET['id'];

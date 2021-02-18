@@ -79,15 +79,17 @@ class pgphotosController extends controller
     
     if ($u->hasPermission('editar_site')) {
       $pg_photos = new Pgphotos();
-
+      $pg_home = new Pghome();
+      
       if (isset($_FILES['addImage']) && !empty($_FILES['addImage']['tmp_name'])) {
         $image = $_FILES['addImage']; 
         
         $img_path = $this->prepareImage($image, 400, 400);
-
+        
         $pg_photos->createPhoto($img_path);
       }
-
+      
+      $data['info_home'] = $pg_home->getPgHome();
       $data['photos'] = $pg_photos->getPhotos();
       $this->loadView("pgphotos", $data);
     } else {

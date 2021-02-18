@@ -208,10 +208,10 @@
 
     }
 
-    public function editRodape($email_rodape01,$name_phone,$name_cel,$endereco__rodape,$link_01,$link_02,$link_03,$horariofuncionamento){
+    public function editRodape($email_rodape01, $name_phone,$name_cel,$endereco__rodape,$link_01,$link_02,$link_03){
 
-			$sql =  "UPDATE pghome SET  email01 = :email01, phone01 = :phone01, cell01 = :cell01, endereco = :endereco, linkrede01 = :linkrede01, linkrede02 = :linkrede02, linkrede03 = :linkrede03, horariofuncionamento = :horariofuncionamento WHERE id = :id ";
-			$sql = $this->db->prepare($sql);
+			$sql= "UPDATE pghome SET email01= :email01, phone01= :phone01, cell01= :cell01, endereco= :endereco, linkrede01= :linkrede01, linkrede02= :linkrede02, linkrede03= :linkrede03 WHERE id= :id ";
+			$sql= $this->db->prepare($sql);
 			$sql->bindValue(':id', 1);
 
 			$sql->bindValue(':email01',$email_rodape01);
@@ -223,7 +223,7 @@
 			$sql->bindValue(':linkrede02',$link_02);
 			$sql->bindValue(':linkrede03',$link_03);
 			
-			$sql->bindValue(':horariofuncionamento',$horariofuncionamento);
+			//$sql->bindValue(':horariofuncionamento',$horariofuncionamento);
 
 			$sql->execute();
 
