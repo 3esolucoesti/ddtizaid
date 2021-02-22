@@ -205,6 +205,16 @@
 
     }
 
+		public function updateMissionBG($image){
+      $sql = "UPDATE pghome SET missionBG = :missionBG WHERE id = :id  ";
+			$sql = $this->db->prepare($sql);
+			
+			$sql->bindValue(':missionBG',$image);
+			$sql->bindValue(':id', 1);
+
+			$sql->execute();
+    }
+
     public function editRodape($email_rodape01, $name_phone,$name_cel,$endereco__rodape,$link_01,$link_02,$link_03){
 
 			$sql= "UPDATE pghome SET email01= :email01, phone01= :phone01, cell01= :cell01, endereco= :endereco, linkrede01= :linkrede01, linkrede02= :linkrede02, linkrede03= :linkrede03 WHERE id= :id ";

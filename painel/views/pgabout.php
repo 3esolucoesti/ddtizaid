@@ -63,6 +63,90 @@
   </div>
 </section>
 
+<!-- Modal - Editar "Sobre Nós" -->
+<div id="modal_EditAbout" class="modal fade mt-5" role="dialog" data-backdrop="static">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content text-left">
+
+      <div class="modal-header">
+        <button type="button" class="d-none close" data-dismiss="modal">&times;</button>
+        <div class="col">
+          <h5 class="modal-title text-uppercase text-center">Editar "Sobre Nós"</h5>
+        </div>
+      </div>
+
+      <div class="modal-body">
+        <form method="POST" enctype="multipart/form-data">
+          <ul class="nav nav-tabs" style="flex-flow: nowrap; gap: 1px;">
+            <li class="active" style="width: 100%;">
+              <button class="btn btn-info btn-block" data-toggle="tab" href="#mainSection">
+                Seção Principal
+              </button>
+            </li>
+            <li style="width: 100%;">
+              <button class="btn btn-info btn-block" data-toggle="tab" href="#subSection">
+                Subseção
+              </button>
+            </li>
+          </ul>
+
+          <!-- Conteudo das abas -->
+          <div class="tab-content mt-3">
+            <!-- Seção Principal -->
+            <div id="mainSection" class="tab-pane active">
+              <h5>Seção Principal</h5>
+              <div class="d-flex justify-center mt-5">
+                <div class="imgSobre text-center">
+                  <img src="<?= BASE_URL; ?>/painel/assets/images/<?= $info_about['images']; ?>" height="300" alt="" />
+                  <label>Imagem Atual</label>
+                </div>
+              </div>
+
+              <div class="mt-3">
+                <label>Alterar Imagem: </label><strong style="color: red;font-size: .9em;"> ( OBS: TAMANHO MÁXIMO 1MB / 500px X 400px )</strong>
+                <input type="file" name="about_photo" class="form-control ">
+
+                <label class="mt-3">Alterar Titulo:</label>
+                <input type="text" name="about_title" class="form-control" value="<?= $info_about['sobre_titulo'] ?>" required>
+
+                <label class="mt-3">Alterar paragrafo:</label>
+                <textarea class="form-control" name="about_description" required><?= $info_about['sobre_desc'] ?></textarea>
+              </div>
+            </div>
+
+            <!-- Subseção -->
+            <div id="subSection" class="tab-pane ">
+              <h5>Subseção</h5>
+              <div class="form-group mt-3">
+                <label>Missão</label>
+                <textarea name="about_mission" class="form-control" required><?= $info_about['sobre_missao'] ?></textarea>
+              </div>
+
+              <div class="form-group mt-3">
+                <label>Visão</label>
+                <textarea name="about_vision" class="form-control" required><?= $info_about['sobre_visao'] ?></textarea>
+              </div>
+
+              <div class="form-group mt-3">
+                <label>Valores</label>
+                <textarea name="about_values" class="form-control" required><?= $info_about['sobre_valores'] ?></textarea>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-primary">ATUALIZAR</button>
+            <button type="button" class="btn btn-danger" data-dismiss="modal">CANCELAR</button>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- About Us -->
 <section class="about-us section" style="background:#ff6f12;">
   <div class="container p-5" style="background:#fff;">
@@ -121,91 +205,6 @@
       Editar Seção
       <i class="fa fa-cogs"></i>
     </button>
-
-    <!-- Modal - Editar "Sobre Nós" -->
-    <div id="modal_EditAbout" class="modal fade mt-5" role="dialog" data-backdrop="static">
-      <div class="modal-dialog modal-lg">
-
-        <!-- Modal content-->
-        <div class="modal-content text-left">
-
-          <div class="modal-header">
-            <button type="button" class="d-none close" data-dismiss="modal">&times;</button>
-            <div class="col">
-              <h5 class="modal-title text-uppercase text-center">Editar "Sobre Nós"</h5>
-            </div>
-          </div>
-
-          <div class="modal-body">
-            <form method="POST" enctype="multipart/form-data">
-              <ul class="nav nav-tabs">
-                <li class="active">
-                  <button class="btn btn-info" data-toggle="tab" href="#mainSection">
-                    Seção Principal
-                  </button>
-                </li>
-                <li>
-                  <button class="btn btn-info btn-lg" data-toggle="tab" href="#subSection">
-                    Subseção
-                  </button>
-                </li>
-              </ul>
-
-              <!-- Conteudo das abas -->
-              <div class="tab-content mt-3">
-                <!-- Seção Principal -->
-                <div id="mainSection" class="tab-pane active">
-                  <h3>Seção Principal</h3>
-                  <div class="d-flex justify-center mt-5">
-                    <div class="imgSobre text-center">
-                      <img src="<?= BASE_URL; ?>/painel/assets/images/<?= $info_about['images']; ?>" height="300" alt="" />
-                      <label>Imagem Atual</label>
-                    </div>
-                  </div>
-
-                  <div class="mt-3">
-                    <label>Alterar Imagem: </label><strong style="color: red;font-size: .9em;"> ( OBS: TAMANHO MÁXIMO 1MB / 500px X 400px )</strong>
-                    <input type="file" name="about_photo" class="form-control ">
-
-                    <label class="mt-3">Alterar Titulo:</label>
-                    <input type="text" name="about_title" class="form-control" value="<?= $info_about['sobre_titulo'] ?>" required>
-
-                    <label class="mt-3">Alterar paragrafo:</label>
-                    <textarea class="form-control" name="about_description" required><?= $info_about['sobre_desc'] ?></textarea>
-                  </div>
-                </div>
-
-                <!-- Subseção -->
-                <div id="subSection" class="tab-pane ">
-                  <h3>Subseção</h3>
-                  <div class="form-group mt-3">
-                    <label>Missão</label>
-                    <textarea name="about_mission" class="form-control" required><?= $info_about['sobre_missao'] ?></textarea>
-                  </div>
-
-                  <div class="form-group mt-3">
-                    <label>Visão</label>
-                    <textarea name="about_vision" class="form-control" required><?= $info_about['sobre_visao'] ?></textarea>
-                  </div>
-
-                  <div class="form-group mt-3">
-                    <label>Valores</label>
-                    <textarea name="about_values" class="form-control" required><?= $info_about['sobre_valores'] ?></textarea>
-                  </div>
-                </div>
-              </div>
-
-              <div class="modal-footer">
-                <button type="button" class="btn btn-danger" data-dismiss="modal">CANCELAR</button>
-                <button type="submit" class="btn btn-primary">ATUALIZAR</button>
-              </div>
-
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-
   </div>
 
 </section>

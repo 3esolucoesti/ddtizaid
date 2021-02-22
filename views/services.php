@@ -1,13 +1,5 @@
 <style>
-	.services .single-service {
-		/* min-height: 400px !important; */
-	}
-
-	@media all and (min-width: 480px) {
-		.services .single-service {
-			/* min-height: 350px !important; */
-		}
-	}
+	
 </style>
 
 <!-- Breadcrumbs -->

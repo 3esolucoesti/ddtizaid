@@ -46,13 +46,13 @@
 
       // Ajax function that GET a response in json format
       $.getJSON(route, {}, (res) => {
-          $('.img-preview').html('<img src="<?= BASE_URL; ?>/painel/assets/images/' + res.image + '" height="200" alt="" border="0" />');
-          $('.editName').val(res.name);
-          $('.editDescription').val(res.description);
-          $('.idField').val(id);
+        $('.img-preview').html('<img src="<?= BASE_URL; ?>/painel/assets/images/' + res.image + '" height="200" alt="" border="0" />');
+        $('.editName').val(res.name);
+        $('.editDescription').val(res.description);
+        $('.idField').val(id);
 
-          $('.edit-modal').modal('show');
-        });
+        $('.edit-modal').modal('show');
+      });
 
     });
 
@@ -221,7 +221,7 @@
 
     <!-- Content -->
     <div class="row">
-      <?php $IMG_URL = BASE_URL . "/painel/assets/images/";?>
+      <?php $IMG_URL = BASE_URL . "/painel/assets/images/"; ?>
       <?php foreach ($info_insetos as $inseto) : ?>
         <!-- Single Service -->
         <div class="col-lg-4 col-md-6 col-12">

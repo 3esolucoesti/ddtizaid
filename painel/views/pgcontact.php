@@ -72,7 +72,7 @@
             </div>
 
             <div class="col-lg-12 col-12 form-group">
-              <textarea name="message" rows="6" placeholder="Digite sua mensagem"></textarea>
+              <textarea name="message" rows="6" placeholder="Digite sua mensagem" disabled></textarea>
             </div>
 
             <div class="col-lg-12 col-12 form-group button">

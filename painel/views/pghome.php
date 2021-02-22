@@ -2,7 +2,7 @@
 
 <style>
   .call-to-action {
-    background-image: url('<?php echo BASE_URL; ?>/assets/images/call-to-action.jpg');
+    background-image: url('<?= BASE_URL; ?>/painel/assets/images/<?= $info_home['missionBG']; ?>');
   }
 
   .hero-area .owl-controls .owl-nav .owl-prev {
@@ -278,7 +278,7 @@
 
   <div class="barraEditarHome container">
     <div class="wow fadeIn" data-wow-delay="0.5s">
-      <a href="<?php echo BASE_URL; ?>/painel/pghome/lista_slide" class="btnEditGeral" data-target="#editConquistas" data-toggle="modal">
+      <a href="#" class="btnEditGeral" data-target="#editConquistas" data-toggle="modal">
         Editar Conquistas
         <i class="fa fa-cogs"></i>
       </a>
@@ -350,6 +350,7 @@
 
               </form>
             </div>
+
           </div>
         </div>
       </div>
@@ -425,8 +426,7 @@
         <div class="call-to-main">
           <h2>Nossa Missão <br> <span style="font-size:12px;"> DDTIZA-ID </span> </h2> <br>
           <p><?= $info_about['sobre_missao']; ?></p>
-          <a href="<?= BASE_URL; ?>/contact" class="btn">ORÇAMENTO</a>
-          <!-- Seção de Edição -->
+          <a href="<?= BASE_URL; ?>/painel/pgcontact" class="btn">ORÇAMENTO</a>
         </div>
       </div>
     </div>
@@ -434,10 +434,54 @@
 </section>
 <!-- Editar Missão -->
 <div class="barraEditarHome">
-  <a href="<?php echo BASE_URL; ?>/painel/pgabout" class="btnEditGeral">
-    Ir a pagina "Sobre" para editar
+  <a href="<?= BASE_URL; ?>/painel/pgabout" class="btnEditGeral">
+    Ir a pagina "Sobre" para editar o texto
     <i class="fa fa-cogs"></i>
   </a>
+
+  <a href="#" class="btnEditGeral ml-3" data-target="#edit_mission_bg" data-toggle="modal">
+    Editar Imagem de Fundo
+    <i class="fa fa-cogs"></i>
+  </a>
+
+  <!-- Modal Edit Mission Background -->
+  <div id="edit_mission_bg" class="modal fade mt-5" role="dialog" data-backdrop="static">
+    <div class="modal-dialog modal-lg">
+
+      <!-- Modal content-->
+      <div class="modal-content text-left">
+
+        <div class="modal-header">
+          <button type="button" class="d-none close" data-dismiss="modal">&times;</button>
+          <div class="col">
+            <h5 class="modal-title text-uppercase text-center">Editar Imagem de Fundo</h5>
+          </div>
+        </div>
+
+        <div class="modal-body">
+          <div class='img-preview text-center mb-3 mx-5 px-5'>
+            <img class='mx-auto' src="<?= BASE_URL; ?>/painel/assets/images/<?= $info_home['missionBG']; ?>" alt="" />
+            <span>Imagem Atual</span>
+          </div>
+
+          <form id="misson-bg-Form" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+              <label for="mission-bg-img">Escolher Imagem: </label> 
+              <strong style="color: red;font-size: .9em;">( OBS: TAMANHO MÁXIMO 1MB / 1980px X 1080px )</strong>
+              <input type="file" name="mission-bg-img" id="mission-bg-img">
+            </div>
+            <input type="hidden" name="mission-bg">
+          </form>
+        </div>
+
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-primary" form="misson-bg-Form">ATUALIZAR</button>
+          <button type="button" class="btn btn-danger" data-dismiss="modal">CANCELAR</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
 </div>
 
 <!-- Area de Depoimentos -->

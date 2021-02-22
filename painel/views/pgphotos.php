@@ -70,7 +70,7 @@
         <form id="add-inseto" method="POST" enctype="multipart/form-data">
           <div class="form-group">
             <label>Escolher Imagem:</label>
-            <span>( OBS: TAMANHO MÁXIMO 1MB / 400px X 400px )</span>
+            <span>( OBS: TAMANHO MÁXIMO 1MB / 550px X 400px )</span>
             <input type="file" name="addImage" class="form-control addImage" required>
           </div>
         </form>

@@ -195,7 +195,8 @@
 			});
 		</script>
 
-	</head>
+</head>
+
 <body>
 	<!-- Preloader -->
 	<div class="preloader">
@@ -211,7 +212,6 @@
 			<div class="single-loader nine"></div>
 		</div>
 	</div>
-	<!-- End Preloader -->
 
 	<div class="menuflex" >
 		<!-- Logo -->
@@ -281,7 +281,6 @@
 		</div>
 		<!--/ End Middle Bar -->
 	</header>
-	<!--/ End Header -->
 				
 	<div class="containerr">
 		<style type="text/css">
@@ -323,7 +322,6 @@
 </section>
 <!--/ End Breadcrumbs -->
 
-
 <!-- Start Contact -->
 <section id="contact-us" class="contact-us section" style="background:#ff6f12;">
 	<div class="container p-5" style="background:#fff;">
@@ -342,7 +340,7 @@
 						<h2>Envie uma mensagem para nós</h2>
 					</div>
 
-					<form class="form row" method="post" action="mail/mail.php">
+					<form class="form row" method="post">
 						<div class="col-lg-6 col-12 form-group">
 							<input type="text" name="name" placeholder="Nome" required >
 						</div>
@@ -418,7 +416,6 @@
 	<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15033.219173666406!2d-43.224133!3d-19.614263!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf7d7a4a03f1a2622!2sDDtiza-ID%20Desentupidora%20e%20Loc%20Banheiro!5e0!3m2!1sen!2sbr!4v1611262751477!5m2!1sen!2sbr" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 </div>	</div> 
         
-
 	<!-- Footer -->
 	<footer id="footer" class="footer wow fadeIn" style="background:#ff6f12;" >
 		<!-- Top Arrow -->
@@ -493,6 +490,7 @@
 										<i class="fa fa-instagram"></i>
 									</a>
 								</li>
+								
 							</ul>
 						</div>
 					</div>
@@ -502,8 +500,9 @@
 						<div class="single-widget newsletter">
 							<h2 style="color:white;">Newsletter</h2>
 							<p style="color:white;">Cadastre-se e fique por dentro das nossas novidades.</p>
-							<form action="" method="POST" class="formrodape">
-								<input placeholder="Seu E-mail" type="email" style="color:white;">
+							<form action="http://localhost/php_projects/ddtizaid/contact/newsletter" method="POST" class="formrodape">
+								<input type="email" name="newsletter-email" placeholder="Seu E-mail" style="color:white; text-transform: none;">
+								<input type="hidden" name="pg-url" value='contact'>
 								<button type="submit" class="button primary" style="border: 1px solid white;">Inscreva-se</button>
 							</form>
 						</div>
@@ -544,8 +543,6 @@
 		
 	</footer>
 	
-
-
 	<script src="http://localhost/php_projects/ddtizaid/assets/js/jquery-migrate.min.js"></script>
 	<!-- Popper JS -->
 	<script src="http://localhost/php_projects/ddtizaid/assets/js/popper.min.js"></script>

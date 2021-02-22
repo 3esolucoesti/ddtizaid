@@ -56,12 +56,13 @@ class Pginsetos extends model {
     $sql->execute();
   }
 
-  public function updateInseto($id, $name, $description){
-    $sql= "UPDATE pginsetos SET name= :name, description= :description WHERE id= :id";
+  public function updateInseto($id, $name, $description, $article){
+    $sql= "UPDATE pginsetos SET name= :name, description= :description, article= :article WHERE id= :id";
     $sql= $this->db->prepare($sql);
 
     $sql->bindValue(':name', $name);
     $sql->bindValue(':description', $description);
+    $sql->bindValue(':article', $article);
     $sql->bindValue(':id', $id);
 
     $sql->execute();

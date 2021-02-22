@@ -8,9 +8,18 @@
   .modal-content {
     background: #eaeaea;
   }
-
+  .modal .modal-content .form-group span {
+    color: red;
+  }
   .modal .modal-content .form-group textarea {
-    height: 300px;
+    height: 150px;
+  }
+  .img-preview img {
+    width: 200px;
+  }
+
+  .single-service p {
+    text-align: justify;
   }
 </style>
 
@@ -30,7 +39,6 @@
 </section>
 <!--/ End Breadcrumbs -->
 
-
 <script>
   $(document).ready(function() {
     $('.m6').addClass('active2');
@@ -44,29 +52,42 @@
     <!-- Modal content-->
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title">ADCIONAR ARTIGO</h5>
+        <h5 class="modal-title mx-auto">ADCIONAR ARTIGO</h5>
       </div>
 
       <div class="modal-body">
+        <div class='img-preview text-center mb-3'>
+          <img class='mx-auto' src="<?= BASE_URL; ?>/painel/assets/images/<?= $info_inseto['image']; ?>" alt="" />
+          <span>Imagem Atual</span>
+        </div>
+
         <form id="add-inseto" method="POST" enctype="multipart/form-data">
-          <!-- <div class="form-group">
+          <div class="form-group">
             <label>Escolher Imagem:</label>
             <span>( OBS: TAMANHO MÁXIMO 1MB / 400px X 400px )</span>
-            <input type="file" name="addImage" class="form-control addImage" required>
+            <input type="file" name="editImage" class="form-control editImage">
           </div>
 
           <div class="form-group">
             <label>Nome</label>
-            <input type="text" name="addName" class="form-control addName" required>
-          </div> -->
+            <input type="text" name="editName" class="form-control editName" value="<?= $info_inseto['name'];?>"required>
+          </div>
+
+          <div class="form-group">
+            <label>Descrição</label>
+            <textarea 
+              class="form-control editDescription" 
+              name="editDescription" 
+              required><?= $info_inseto['description'];?></textarea>
+          </div>
 
           <div class="form-group">
             <label>Artigo</label>
             <textarea 
               class="form-control" 
-              name="addarticle" 
+              name="editArticle" 
               placeholder="Digite uma descrição mais aprofundada do tema" 
-              required ><?= $info_inseto['article'];?></textarea>
+               ><?= $info_inseto['article'];?></textarea>
           </div>
         </form>
       </div>
@@ -97,7 +118,6 @@
         <div class="single-service">
 
           <img class='mx-auto' src="<?= BASE_URL; ?>/painel/assets/images/<?= $info_inseto['image']; ?>" alt="" />
-
 
           <h2><a href="javascript:void(0);"><?= $info_inseto['name']; ?></a></h2>
           <p><?= $info_inseto['description']; ?></p>

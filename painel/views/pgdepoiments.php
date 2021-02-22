@@ -94,7 +94,6 @@
 		background-color: transparent;
 	}
 
-	.containerr table th {}
 
 	.imgSlideEditar img {
 		border: 5px solid #e9e9e9;
@@ -124,12 +123,6 @@
 		border: 2px solid #e9e9e9;
 		border-radius: 5px;
 	}
-
-	.sexoTable {}
-
-	.descrTable {}
-
-	.depoiTable {}
 
 	.tituTable {
 		width: 200px;
@@ -268,7 +261,7 @@
 						<form method="POST" enctype="multipart/form-data">
 
 							<label>Escolher Imagem:</label> <strong style="color: red;font-size: .9em;">( OBS: TAMANHO MÁXIMO 1MB / 400px X 400px )</strong>
-							<input type="file" name="photoDepo" class="form-control photoDepo" required="required"><br>
+							<input type="file" name="photoDepo" class="form-control photoDepo"><br>
 
 							<label>Nome:</label>
 							<input type="text" name="namePessoDepo" class="form-control namePessoDepo" required="required"><br>
@@ -291,7 +284,6 @@
 
 			</div>
 		</div>
-
 
 		<!-- Modal Editar -->
 		<div id="editDepoi" class="modal fade editDepoi" role="dialog" data-backdrop="static">

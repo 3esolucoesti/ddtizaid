@@ -200,7 +200,7 @@
 						<h2 style="color:white;">Newsletter</h2>
 						<p style="color:white;">Cadastre-se e fique por dentro das nossas novidades.</p>
 						<form action="" method="POST" class="formrodape">
-							<input placeholder="Seu E-mail" type="email" style="color:white;">
+							<input placeholder="Seu E-mail" type="email" style="color:white;" disabled>
 							<button type="submit" class="button primary" style="border: 1px solid white;">Inscreva-se</button>
 						</form>
 					</div>

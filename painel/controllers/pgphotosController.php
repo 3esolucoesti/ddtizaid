@@ -84,7 +84,7 @@ class pgphotosController extends controller
       if (isset($_FILES['addImage']) && !empty($_FILES['addImage']['tmp_name'])) {
         $image = $_FILES['addImage']; 
         
-        $img_path = $this->prepareImage($image, 400, 400);
+        $img_path = $this->prepareImage($image, 550, 400);
         
         $pg_photos->createPhoto($img_path);
       }

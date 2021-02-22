@@ -7,7 +7,6 @@ setlocale(LC_ALL, 'pt_BR');
 	class Pgcontact extends model
 	{
 		
-
 	public function salvarmsg($name,$phone,$email,$assunto,$menssage){
 		$sql = "INSERT INTO mensages SET name = :name, phone = :phone,  email = :email, assunto = :assunto,  mensagem = :mensagem, dataenvio = :dataenvio, status = :status";
 		$sql = $this->db->prepare($sql);
@@ -21,5 +20,21 @@ setlocale(LC_ALL, 'pt_BR');
 		$sql->execute();
 	}	
 
+	public function addNewsLetter($email){
+		$sql = "INSERT INTO newsletter SET email = :email";
+		$sql = $this->db->prepare($sql);
+		
+		$sql->bindValue(':email',$email);
+		$sql->execute();
+	}
+
+	public function IsInNewsletter($email){
+		$sql = "SELECT COUNT(email) FROM newsletter where email = :email";
+		$stmt = $this->db->prepare($sql);
+
+		$stmt->bindValue(':email', $email);
+		$stmt->execute();
+
+		return ($stmt->fetch()["COUNT(email)"] > 0) ? true: false;
+	}
 }
-?>

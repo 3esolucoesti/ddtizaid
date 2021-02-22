@@ -195,7 +195,8 @@
 			});
 		</script>
 
-	</head>
+</head>
+
 <body>
 	<!-- Preloader -->
 	<div class="preloader">
@@ -211,7 +212,6 @@
 			<div class="single-loader nine"></div>
 		</div>
 	</div>
-	<!-- End Preloader -->
 
 	<div class="menuflex" >
 		<!-- Logo -->
@@ -281,13 +281,11 @@
 		</div>
 		<!--/ End Middle Bar -->
 	</header>
-	<!--/ End Header -->
 				
 	<div class="containerr">
 		<?php $this->loadInTemplate($viewName, $viewData); ?>
 	</div> 
         
-
 	<!-- Footer -->
 	<footer id="footer" class="footer wow fadeIn" style="background:#ff6f12;" >
 		<!-- Top Arrow -->
@@ -366,6 +364,7 @@
 										<i class="fa fa-instagram"></i>
 									</a>
 								</li>
+								
 							</ul>
 						</div>
 					</div>
@@ -375,8 +374,9 @@
 						<div class="single-widget newsletter">
 							<h2 style="color:white;">Newsletter</h2>
 							<p style="color:white;">Cadastre-se e fique por dentro das nossas novidades.</p>
-							<form action="" method="POST" class="formrodape">
-								<input placeholder="Seu E-mail" type="email" style="color:white;">
+							<form action="<?= BASE_URL ?>/contact/newsletter" method="POST" class="formrodape">
+								<input type="email" name="newsletter-email" placeholder="Seu E-mail" style="color:white; text-transform: none;">
+								<input type="hidden" name="pg-url" value='<?= (!empty($_GET['url'])) ? $_GET['url'] : '' ;?>'>
 								<button type="submit" class="button primary" style="border: 1px solid white;">Inscreva-se</button>
 							</form>
 						</div>
@@ -417,8 +417,6 @@
 		
 	</footer>
 	
-
-
 	<script src="<?= BASE_URL; ?>/assets/js/jquery-migrate.min.js"></script>
 	<!-- Popper JS -->
 	<script src="<?= BASE_URL; ?>/assets/js/popper.min.js"></script>

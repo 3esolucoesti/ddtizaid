@@ -1,6 +1,6 @@
   <style>
   	.call-to-action {
-  		background-image: url('<?php echo BASE_URL; ?>/assets/images/call-to-action.jpg');
+  		background-image: url('<?= BASE_URL; ?>/painel/assets/images/<?= $info_home['missionBG'];?>');
   	}
 
   	.hero-area .owl-controls .owl-nav .owl-prev {
@@ -53,15 +53,6 @@
   		margin-top: 100px;
   	}
 
-  	.services .single-service {
-  		/* min-height: 400px !important; */
-  	}
-
-  	@media all and (min-width: 480px) {
-  		.services .single-service {
-  			/* min-height: 350px !important; */
-  		}
-  	}
 
   	@media all and (min-width: 1024px) {
   		.areaslide {
@@ -121,15 +112,15 @@
   		<!-- Indicators -->
   		<ul class="carousel-indicators">
   			<?php for ($i = 0; $i < count($list_slide); $i++) : ?>
-  				<li data-target="#demo" data-slide-to="<?php echo $i; ?>" class="<?php echo ($i == 0) ? 'active' : ''; ?>"></li>
+  				<li data-target="#demo" data-slide-to="<?= $i; ?>" class="<?= ($i == 0) ? 'active' : ''; ?>"></li>
   			<?php endfor ?>
   		</ul>
 
   		<!-- The slideshow -->
   		<div class="carousel-inner">
   			<?php foreach ($list_slide as $slide) : ?>
-  				<div class="carousel-item <?php echo ($slide['id'] == $primeiro_slide['id']) ? 'active' : ''; ?>">
-  					<img src="<?php echo BASE_URL; ?>/painel/assets/images/<?php echo $slide['images']; ?>" alt="Los Angeles">
+  				<div class="carousel-item <?= ($slide['id'] == $primeiro_slide['id']) ? 'active' : ''; ?>">
+  					<img src="<?= BASE_URL; ?>/painel/assets/images/<?= $slide['images']; ?>" alt="Los Angeles">
   				</div>
   			<?php endforeach; ?>
   		</div>
@@ -180,18 +171,17 @@
   	</div>
   </section>
 
-
   <!-- Services -->
   <section id="services" class="services section" style="background:#ff6f12;">
   	<div class="container" style="background:#fff;padding:50px;">
   		<div class="row">
   			<div class="col-12 wow fadeInUp">
   				<div class="section-title">
-  					<!-- <span class="title-bg">SERVIÇOS</span> -->
   					<h1>O que nós fornecemos</h1>
   				</div>
   			</div>
   		</div>
+
   		<div class="row">
   			<div class="col-12">
   				<div class="service-slider">
@@ -199,11 +189,10 @@
   					<?php foreach ($info_services as $service) : ?>
   						<div class="single-service">
   							<i class="fa fa-lightbulb-o"></i>
-  							<h2><a href="<?= BASE_URL; ?>/painel/pgservices"><?= $service['title'] ?></a></h2>
+  							<h2><a href="<?= BASE_URL; ?>/services"><?= $service['title'] ?></a></h2>
   							<p><?= $service['description'] ?></p>
   						</div>
   					<?php endforeach; ?>
-  					<!-- End Single Service -->
   				</div>
   			</div>
   		</div>
@@ -219,50 +208,48 @@
   				<div class="text-content">
   					<div class="section-title">
   						<h1><span>METAS</span>Conquistas</h1>
-  						<p><?php echo $info_home['textoconquistas'] ?></p>
-  						<a href="<?php echo BASE_URL; ?>/painel/pgcontact" class="btn primary">ORÇAMENTO</a>
+  						<p><?= $info_home['textoconquistas'] ?></p>
+  						<a href="<?= BASE_URL; ?>/contact" class="btn primary">ORÇAMENTO</a>
   					</div>
   				</div>
   			</div>
 
   			<div class="col-lg-7 col-12">
   				<div class="row">
+						<!-- Single Fact -->
   					<div class="col-lg-6 col-md-6 col-12 wow fadeIn" data-wow-delay="0.6s">
-  						<!-- Single Fact -->
   						<div class="single-fact">
   							<div class="icon"><i class="fa fa-users"></i></div>
   							<div class="counter">
-  								<p><span class="count"><?php echo $info_home['ffclients'] ?></span></p>
+  								<p><span class="count"><?= $info_home['ffclients'] ?></span></p>
   								<h4>Clientes Satisfeitos</h4>
   							</div>
   						</div>
-  						<!--/ End Single Fact -->
   					</div>
+						
+						<!-- Single Fact -->
   					<div class="col-lg-6 col-md-6 col-12 wow fadeIn" data-wow-delay="0.8s">
-  						<!-- Single Fact -->
   						<div class="single-fact">
   							<div class="icon"><i class="fa fa-bullseye"></i></div>
   							<div class="counter">
-  								<p><span class="count"><?php echo $info_home['ffservices'] ?></span></p>
+  								<p><span class="count"><?= $info_home['ffservices'] ?></span></p>
   								<h4>Tipos de Serviços</h4>
   							</div>
   						</div>
-  						<!--/ End Single Fact -->
   					</div>
+						
+						<!-- Single Fact -->
   					<div class="col-lg-12 col-md-6 col-12 wow fadeIn" data-wow-delay="1.2s">
-  						<!-- Single Fact -->
   						<div class="single-fact" style="display:flex;justify-content:center;">
   							<div class="icon"><i class="fa fa-trophy"></i></div>
   							<div class="counter">
-  								<p><span class="count"><?php echo $info_home['ffmarket'] ?></span></p>
+  								<p><span class="count"><?= $info_home['ffmarket'] ?></span></p>
   								<h4>Anos no mercado</h4>
   							</div>
   						</div>
-  						<!--/ End Single Fact -->
   					</div>
   				</div>
   			</div>
-
   		</div>
   	</div>
   </section>
@@ -270,6 +257,7 @@
   <!-- Portfolio -->
   <section id="portfolio" class="portfolio section" style="background:#ff6f12;">
   	<div class="container" style="background:#fff;padding:50px;padding: 50px;">
+			<!-- Title -->
   		<div class="row">
   			<div class="col-12 wow fadeInUp">
   				<div class="">
@@ -278,17 +266,19 @@
   				</div>
   			</div>
   		</div>
+
+			<!-- portfolio Nav -->
   		<div class="row">
   			<div class="col-12">
-  				<!-- portfolio Nav -->
   				<div class="portfolio-nav">
   					<ul class="tr-list list-inline" id="portfolio-menu">
   					</ul>
   				</div>
-  				<!--/ End portfolio Nav -->
   			</div>
   		</div>
-  		<div class="portfolio-inner">
+			
+  		<!-- Content -->
+			<div class="portfolio-inner">
   			<div class="row">
   				<div class="col-12">
   					<div id="portfolio-item">
@@ -304,19 +294,20 @@
   								</div>
   							</div>
   						<?php endforeach; ?>
-  						<!--/ End portfolio -->
+
   					</div>
   				</div>
+
   				<div class="col-12">
   					<div class="button">
-  						<a class="btn primary" href="<?php echo BASE_URL; ?>/photos">VER LISTA COMPLETA</a>
+  						<a class="btn primary" href="<?= BASE_URL; ?>/photos">VER LISTA COMPLETA</a>
   					</div>
   				</div>
+
   			</div>
   		</div>
   	</div>
   </section>
-
 
   <!-- Call To Action -->
   <section class="call-to-action section" data-stellar-background-ratio="0.5">

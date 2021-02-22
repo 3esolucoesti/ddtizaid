@@ -37,7 +37,6 @@
 </section>
 <!--/ End Breadcrumbs -->
 
-
 <!-- Start Contact -->
 <section id="contact-us" class="contact-us section" style="background:#ff6f12;">
 	<div class="container p-5" style="background:#fff;">
@@ -56,7 +55,7 @@
 						<h2>Envie uma mensagem para nós</h2>
 					</div>
 
-					<form class="form row" method="post" action="mail/mail.php">
+					<form class="form row" method="post">
 						<div class="col-lg-6 col-12 form-group">
 							<input type="text" name="name" placeholder="Nome" required >
 						</div>

@@ -59,6 +59,46 @@ class pghomeController extends controller
 				header("Location: " . BASE_URL . "/painel/pghome");
 			}
 
+
+			if (isset($_FILES['mission-bg-img']) && !empty($_FILES['mission-bg-img']['tmp_name'])) {
+				$image = $_FILES['mission-bg-img'];
+
+				$filename1 = $image['tmp_name'];
+
+
+				$largura0 = 1920; // Maxíma
+				$altura0 = 10800; // Maxíma
+
+				//TAMANHO ORIGINAL DA IMAGEM
+				list($largura0Original, $altura0Original) = getimagesize($filename1);
+
+				$ratio0 = $largura0Original / $altura0Original;
+
+				//ALTURA DA IMAGEM 200px LARGURA VAI SER PROPOCIONAL 
+				$largura0 = $altura0 * $ratio0;
+
+				
+				if ($image['type'] == 'image/jpeg') {
+					$imagem_original0 = imagecreatefromjpeg($filename1);
+					$nameImg1920x900 = "min_1920x900" . md5(rand(0, 999) . time() . rand(0, 999)) . ".jpg"; //mandando image 200px
+					imagejpeg($imagem_original0, "assets/images/" . $nameImg1920x900);
+				} 
+				else if ($image['type'] == 'image/png') {
+					$imagem_original0 = imagecreatefrompng($filename1);
+					$nameImg1920x900 = "min_1920x900" . md5(rand(0, 999) . time() . rand(0, 999)) . ".png"; //mandando image 200px
+					imagepng($imagem_original0, "assets/images/" . $nameImg1920x900);
+				} 
+				else if ($image['type'] == 'image/gif') {
+					$imagem_original0 = imagecreatefromgif($filename1);
+					$nameImg1920x900 = "min_1920x900" . md5(rand(0, 999) . time() . rand(0, 999)) . ".gif"; //mandando image 200px
+					imagegif($imagem_original0, "assets/images/" . $nameImg1920x900);
+				}
+				$pg_home->updateMissionBG($nameImg1920x900);
+				
+				header("Location: " . BASE_URL . "/painel/pghome");
+			}
+
+
 			$data['info_home'] = $pg_home->getPgHome();
 			$data['list_slide'] = $pg_home->getSlide();
 			$data['primeiro_slide'] = $pg_home->getPriSlide();
@@ -66,7 +106,6 @@ class pghomeController extends controller
 			$data['info_about'] = $pg_about->getinfohome();
 			$data['info_services'] = $pg_servicos->getServices();
 			$data['list_photos'] = $pg_photos->getPhotosPage(0, 6);
-
 
 			$this->loadView("pghome", $data);
 		} else {

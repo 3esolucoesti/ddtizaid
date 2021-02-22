@@ -89,55 +89,56 @@ class pginsetosController extends controller
     if ($u->hasPermission('editar_site')) {
       $pg_insetos = new Pginsetos();
       $pg_home = new Pghome();
-			$data['info_home'] = $pg_home->getPgHome();
+      $data['info_home'] = $pg_home->getPgHome();
+
+      // Add new Inseto
+      if (isset($_POST['addName']) && !empty($_POST['addName'])) {
+        $addName = $_POST['addName'];
+        $addDescription = $_POST['addDescription'];
+
+        if (isset($_FILES['addImage']) && !empty($_FILES['addImage']['tmp_name'])) {
+          $image = $_FILES['addImage'];
+          $largura0 = 400; // Maxíma
+          $altura0 = 400; // Maxíma
+
+          $img_name = $this->prepareImage($image, $altura0, $largura0);
+        }
+
+        $pg_insetos->createInseto($img_name, $addName, $addDescription);
+      }
+
+      // edit Inseto
+      if (isset($_POST['editName']) && !empty($_POST['editName'])) {
+        if (isset($_GET['id'])) {
+          $edit_id = addslashes($_GET['id']);
+          $edit_article = $_POST['editArticle'];
+        } else {
+          $edit_id = addslashes($_POST['id']);
+          $edit_article = null;
+        }
+        
+        $editName = addslashes($_POST['editName']);
+        $editDescription = $_POST['editDescription'];
+
+        if (isset($_FILES['editImage']) && !empty($_FILES['editImage']['tmp_name'])) {
+          $image = $_FILES['editImage'];
+
+          $largura0 = 400; // Maxíma
+          $altura0 = 400; // Maxíma
+
+          $img_name = $this->prepareImage($image, $altura0, $largura0);
+          $pg_insetos->updateInsetoImage($edit_id, $img_name);
+        }
+        
+        $pg_insetos->updateInseto($edit_id, $editName, $editDescription, $edit_article);
+      }
 
       if (isset($_GET['id'])) {
         $id = $_GET['id'];
 
-        if (isset($_POST['addarticle']) && !empty($_POST['addarticle'])) {
-          $addarticle = $_POST['addarticle'];
-
-          $pg_insetos->updateInsetoArticle($id, $addarticle);
-        }
-
         $data['info_inseto'] = $pg_insetos->getInseto($id);
         $this->loadView("pginseto_about", $data);
       } else {
-
-        // Add new Inseto
-        if (isset($_POST['addName']) && !empty($_POST['addName'])) {
-          $addName = $_POST['addName'];
-          $addDescription = $_POST['addDescription'];
-
-          if (isset($_FILES['addImage']) && !empty($_FILES['addImage']['tmp_name'])) {
-            $image = $_FILES['addImage'];
-            $largura0 = 400; // Maxíma
-            $altura0 = 400; // Maxíma
-
-            $img_name = $this->prepareImage($image, $altura0, $largura0);
-          }
-
-          $pg_insetos->createInseto($img_name, $addName, $addDescription);
-        }
-
-        // edit Inseto
-        if (isset($_POST['editName']) && !empty($_POST['editName'])) {
-          $edit_id = $_POST['id'];
-          $editName = $_POST['editName'];
-          $editDescription = $_POST['editDescription'];
-
-          if (isset($_FILES['editImage']) && !empty($_FILES['editImage']['tmp_name'])) {
-            $image = $_FILES['editImage'];
-
-            $largura0 = 400; // Maxíma
-            $altura0 = 400; // Maxíma
-
-            $img_name = $this->prepareImage($image, $altura0, $largura0);
-            $pg_insetos->updateInsetoImage($edit_id, $img_name);
-          } else {
-            $pg_insetos->updateInseto($edit_id, $editName, $editDescription);
-          }
-        }
 
         $data["info_insetos"] = $pg_insetos->getInsetos();
         $this->loadView("pginsetos", $data);

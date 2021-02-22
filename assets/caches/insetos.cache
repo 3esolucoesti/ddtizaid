@@ -195,7 +195,8 @@
 			});
 		</script>
 
-	</head>
+</head>
+
 <body>
 	<!-- Preloader -->
 	<div class="preloader">
@@ -211,7 +212,6 @@
 			<div class="single-loader nine"></div>
 		</div>
 	</div>
-	<!-- End Preloader -->
 
 	<div class="menuflex" >
 		<!-- Logo -->
@@ -281,19 +281,10 @@
 		</div>
 		<!--/ End Middle Bar -->
 	</header>
-	<!--/ End Header -->
 				
 	<div class="containerr">
 		<style>
-	.services .single-service {
-		/* min-height: 500px !important; */
-	}
-
-	@media all and (min-width: 480px) {
-		.services .single-service {
-			/* min-height: 600px !important; */
-		}
-	}
+	
 </style>
 
 <!-- Breadcrumbs -->
@@ -388,9 +379,9 @@
 							<!-- Single Service -->
 				<div class="col-lg-4 col-md-6 col-12">
 					<div class="single-service">
-						<img src="http://localhost/php_projects/ddtizaid/painel/assets/images/min_800x5001a62743db5c5dd32367c9b20631e036f.jpg" alt="Carunchos" />
+						<img src="http://localhost/php_projects/ddtizaid/painel/assets/images/min_800x500ea4608723368b11fbb8c4a082777c960.jpg" alt="Carunchos" />
 						<h2>Carunchos</h2>
-						<p>welcome to our consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt a tristique tortor maximus</p>
+						<p>welcome to our consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt a tristique tortor maximus welcome to our consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt a tristique tortor maximus </p>
 						<a href="http://localhost/php_projects/ddtizaid/insetos/insetosid/8" class="btn btn-default mt-4" style="background:#ff6f12;color:white;">SAIBA MAIS</a>
 					</div>
 				</div>
@@ -500,7 +491,6 @@
 </section>
 <!--/ End Services -->	</div> 
         
-
 	<!-- Footer -->
 	<footer id="footer" class="footer wow fadeIn" style="background:#ff6f12;" >
 		<!-- Top Arrow -->
@@ -575,6 +565,7 @@
 										<i class="fa fa-instagram"></i>
 									</a>
 								</li>
+								
 							</ul>
 						</div>
 					</div>
@@ -584,8 +575,9 @@
 						<div class="single-widget newsletter">
 							<h2 style="color:white;">Newsletter</h2>
 							<p style="color:white;">Cadastre-se e fique por dentro das nossas novidades.</p>
-							<form action="" method="POST" class="formrodape">
-								<input placeholder="Seu E-mail" type="email" style="color:white;">
+							<form action="http://localhost/php_projects/ddtizaid/contact/newsletter" method="POST" class="formrodape">
+								<input type="email" name="newsletter-email" placeholder="Seu E-mail" style="color:white; text-transform: none;">
+								<input type="hidden" name="pg-url" value='insetos'>
 								<button type="submit" class="button primary" style="border: 1px solid white;">Inscreva-se</button>
 							</form>
 						</div>
@@ -626,8 +618,6 @@
 		
 	</footer>
 	
-
-
 	<script src="http://localhost/php_projects/ddtizaid/assets/js/jquery-migrate.min.js"></script>
 	<!-- Popper JS -->
 	<script src="http://localhost/php_projects/ddtizaid/assets/js/popper.min.js"></script>

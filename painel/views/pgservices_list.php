@@ -187,8 +187,8 @@
   <div class="voltarParaoSite">
     <div>
       <i class="fa fa-arrow-left"></i>
-      <a href="<?= BASE_URL; ?>/painel/pgservices">
-        Voltar para a pagina "Serviços"
+      <a href="<?= BASE_URL; ?>/painel">
+        IR PARA PAINEL
       </a>
     </div>
   </div>
@@ -341,7 +341,7 @@
       </div>
 
       <div class="divAddInden">
-        <a href="<?= BASE_URL; ?>/painel/pghome" class="btn btn-info ml-3">
+        <a href="<?= BASE_URL; ?>/painel/pgservices" class="btn btn-info ml-3">
           <i class="fa fa-arrow-left"></i>
           VOLTAR EDITAR PÁGINA SERVIÇOS
         </a>

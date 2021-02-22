@@ -195,7 +195,8 @@
 			});
 		</script>
 
-	</head>
+</head>
+
 <body>
 	<!-- Preloader -->
 	<div class="preloader">
@@ -211,7 +212,6 @@
 			<div class="single-loader nine"></div>
 		</div>
 	</div>
-	<!-- End Preloader -->
 
 	<div class="menuflex" >
 		<!-- Logo -->
@@ -281,12 +281,11 @@
 		</div>
 		<!--/ End Middle Bar -->
 	</header>
-	<!--/ End Header -->
 				
 	<div class="containerr">
 		  <style>
   	.call-to-action {
-  		background-image: url('http://localhost/php_projects/ddtizaid/assets/images/call-to-action.jpg');
+  		background-image: url('http://localhost/php_projects/ddtizaid/painel/assets/images/min_1920x9006128a7ec9f30873a84ba8867c5917321.jpg');
   	}
 
   	.hero-area .owl-controls .owl-nav .owl-prev {
@@ -339,15 +338,6 @@
   		margin-top: 100px;
   	}
 
-  	.services .single-service {
-  		/* min-height: 400px !important; */
-  	}
-
-  	@media all and (min-width: 480px) {
-  		.services .single-service {
-  			/* min-height: 350px !important; */
-  		}
-  	}
 
   	@media all and (min-width: 1024px) {
   		.areaslide {
@@ -470,49 +460,47 @@
   	</div>
   </section>
 
-
   <!-- Services -->
   <section id="services" class="services section" style="background:#ff6f12;">
   	<div class="container" style="background:#fff;padding:50px;">
   		<div class="row">
   			<div class="col-12 wow fadeInUp">
   				<div class="section-title">
-  					<!-- <span class="title-bg">SERVIÇOS</span> -->
   					<h1>O que nós fornecemos</h1>
   				</div>
   			</div>
   		</div>
+
   		<div class="row">
   			<div class="col-12">
   				<div class="service-slider">
   					<!-- Single Service -->
   					  						<div class="single-service">
   							<i class="fa fa-lightbulb-o"></i>
-  							<h2><a href="http://localhost/php_projects/ddtizaid/painel/pgservices">Serviço Teste 01</a></h2>
+  							<h2><a href="http://localhost/php_projects/ddtizaid/services">Serviço Teste 01</a></h2>
   							<p>welcome to our consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt a tristique tortor maximus</p>
   						</div>
   					  						<div class="single-service">
   							<i class="fa fa-lightbulb-o"></i>
-  							<h2><a href="http://localhost/php_projects/ddtizaid/painel/pgservices">Serviço Teste 02</a></h2>
+  							<h2><a href="http://localhost/php_projects/ddtizaid/services">Serviço Teste 02</a></h2>
   							<p>welcome to our consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt a tristique tortor maximus</p>
   						</div>
   					  						<div class="single-service">
   							<i class="fa fa-lightbulb-o"></i>
-  							<h2><a href="http://localhost/php_projects/ddtizaid/painel/pgservices">Serviço Teste 03</a></h2>
+  							<h2><a href="http://localhost/php_projects/ddtizaid/services">Serviço Teste 03</a></h2>
   							<p>welcome to our consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt a tristique tortor maximus</p>
   						</div>
   					  						<div class="single-service">
   							<i class="fa fa-lightbulb-o"></i>
-  							<h2><a href="http://localhost/php_projects/ddtizaid/painel/pgservices">Serviço Teste 04</a></h2>
+  							<h2><a href="http://localhost/php_projects/ddtizaid/services">Serviço Teste 04</a></h2>
   							<p>welcome to our consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt a tristique tortor maximus</p>
   						</div>
   					  						<div class="single-service">
   							<i class="fa fa-lightbulb-o"></i>
-  							<h2><a href="http://localhost/php_projects/ddtizaid/painel/pgservices">Serviço Teste 05</a></h2>
+  							<h2><a href="http://localhost/php_projects/ddtizaid/services">Serviço Teste 05</a></h2>
   							<p>welcome to our consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt a tristique tortor maximus</p>
   						</div>
-  					  					<!-- End Single Service -->
-  				</div>
+  					  				</div>
   			</div>
   		</div>
   	</div>
@@ -528,15 +516,15 @@
   					<div class="section-title">
   						<h1><span>METAS</span>Conquistas</h1>
   						<p>Caro cliente, é com grande alegria que agradecemos por depositar sua confiança em nosso trabalho e profissionalismo.</p>
-  						<a href="http://localhost/php_projects/ddtizaid/painel/pgcontact" class="btn primary">ORÇAMENTO</a>
+  						<a href="http://localhost/php_projects/ddtizaid/contact" class="btn primary">ORÇAMENTO</a>
   					</div>
   				</div>
   			</div>
 
   			<div class="col-lg-7 col-12">
   				<div class="row">
+						<!-- Single Fact -->
   					<div class="col-lg-6 col-md-6 col-12 wow fadeIn" data-wow-delay="0.6s">
-  						<!-- Single Fact -->
   						<div class="single-fact">
   							<div class="icon"><i class="fa fa-users"></i></div>
   							<div class="counter">
@@ -544,10 +532,10 @@
   								<h4>Clientes Satisfeitos</h4>
   							</div>
   						</div>
-  						<!--/ End Single Fact -->
   					</div>
+						
+						<!-- Single Fact -->
   					<div class="col-lg-6 col-md-6 col-12 wow fadeIn" data-wow-delay="0.8s">
-  						<!-- Single Fact -->
   						<div class="single-fact">
   							<div class="icon"><i class="fa fa-bullseye"></i></div>
   							<div class="counter">
@@ -555,10 +543,10 @@
   								<h4>Tipos de Serviços</h4>
   							</div>
   						</div>
-  						<!--/ End Single Fact -->
   					</div>
+						
+						<!-- Single Fact -->
   					<div class="col-lg-12 col-md-6 col-12 wow fadeIn" data-wow-delay="1.2s">
-  						<!-- Single Fact -->
   						<div class="single-fact" style="display:flex;justify-content:center;">
   							<div class="icon"><i class="fa fa-trophy"></i></div>
   							<div class="counter">
@@ -566,11 +554,9 @@
   								<h4>Anos no mercado</h4>
   							</div>
   						</div>
-  						<!--/ End Single Fact -->
   					</div>
   				</div>
   			</div>
-
   		</div>
   	</div>
   </section>
@@ -578,6 +564,7 @@
   <!-- Portfolio -->
   <section id="portfolio" class="portfolio section" style="background:#ff6f12;">
   	<div class="container" style="background:#fff;padding:50px;padding: 50px;">
+			<!-- Title -->
   		<div class="row">
   			<div class="col-12 wow fadeInUp">
   				<div class="">
@@ -586,17 +573,19 @@
   				</div>
   			</div>
   		</div>
+
+			<!-- portfolio Nav -->
   		<div class="row">
   			<div class="col-12">
-  				<!-- portfolio Nav -->
   				<div class="portfolio-nav">
   					<ul class="tr-list list-inline" id="portfolio-menu">
   					</ul>
   				</div>
-  				<!--/ End portfolio Nav -->
   			</div>
   		</div>
-  		<div class="portfolio-inner">
+			
+  		<!-- Content -->
+			<div class="portfolio-inner">
   			<div class="row">
   				<div class="col-12">
   					<div id="portfolio-item">
@@ -655,19 +644,20 @@
   									</div>
   								</div>
   							</div>
-  						  						<!--/ End portfolio -->
+  						
   					</div>
   				</div>
+
   				<div class="col-12">
   					<div class="button">
   						<a class="btn primary" href="http://localhost/php_projects/ddtizaid/photos">VER LISTA COMPLETA</a>
   					</div>
   				</div>
+
   			</div>
   		</div>
   	</div>
   </section>
-
 
   <!-- Call To Action -->
   <section class="call-to-action section" data-stellar-background-ratio="0.5">
@@ -767,13 +757,25 @@
   								</div>
   							</div>
   						</div>
+  					  						<div class="col-lg-4 col-12">
+  							<div class="single-blog">
+  								<div class="blog-head">
+  									<img src="http://localhost/php_projects/ddtizaid/painel/assets/images/min_800x500ce693047b4d9e78c3473c25e098f07a2.png" alt="#">
+  								</div>
+  								<div class="blog-bottom">
+  									<div class="blog-inner">
+  										<h4><a href="javascript:void(0);">Fulano Beltrano Sicrano</a></h4>
+  										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+  									</div>
+  								</div>
+  							</div>
+  						</div>
   					  				</div>
   			</div>
   		</div>
   	</div>
   </section>	</div> 
         
-
 	<!-- Footer -->
 	<footer id="footer" class="footer wow fadeIn" style="background:#ff6f12;" >
 		<!-- Top Arrow -->
@@ -848,6 +850,7 @@
 										<i class="fa fa-instagram"></i>
 									</a>
 								</li>
+								
 							</ul>
 						</div>
 					</div>
@@ -857,8 +860,9 @@
 						<div class="single-widget newsletter">
 							<h2 style="color:white;">Newsletter</h2>
 							<p style="color:white;">Cadastre-se e fique por dentro das nossas novidades.</p>
-							<form action="" method="POST" class="formrodape">
-								<input placeholder="Seu E-mail" type="email" style="color:white;">
+							<form action="http://localhost/php_projects/ddtizaid/contact/newsletter" method="POST" class="formrodape">
+								<input type="email" name="newsletter-email" placeholder="Seu E-mail" style="color:white; text-transform: none;">
+								<input type="hidden" name="pg-url" value=''>
 								<button type="submit" class="button primary" style="border: 1px solid white;">Inscreva-se</button>
 							</form>
 						</div>
@@ -899,8 +903,6 @@
 		
 	</footer>
 	
-
-
 	<script src="http://localhost/php_projects/ddtizaid/assets/js/jquery-migrate.min.js"></script>
 	<!-- Popper JS -->
 	<script src="http://localhost/php_projects/ddtizaid/assets/js/popper.min.js"></script>

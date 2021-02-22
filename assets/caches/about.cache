@@ -195,7 +195,8 @@
 			});
 		</script>
 
-	</head>
+</head>
+
 <body>
 	<!-- Preloader -->
 	<div class="preloader">
@@ -473,6 +474,7 @@
 							<p style="color:white;">Cadastre-se e fique por dentro das nossas novidades.</p>
 							<form action="" method="POST" class="formrodape">
 								<input placeholder="Seu E-mail" type="email" style="color:white;">
+								<input type="hidden" name="pgurl" value='about'>
 								<button type="submit" class="button primary" style="border: 1px solid white;">Inscreva-se</button>
 							</form>
 						</div>
